@@ -12,9 +12,8 @@ export const BrandContainer = styled.div`
     grid-row: 1/3;
     height: 100%;
     width: auto;
-    border-radius: 4px;
-
     max-height: 2em;
+    border-radius: 4px;
   }
 
   & span {

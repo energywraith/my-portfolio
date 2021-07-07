@@ -85,7 +85,7 @@ export const NavLinks = styled.ul`
 
   @media(max-width: 600px) {
     animation: ${fadeIn} 0.1s forwards;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100vw;
