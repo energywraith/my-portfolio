@@ -1,0 +1,8 @@
+/* Importing font face into styled-components caused flickering, 
+moving them to css file fixes the problem */
+@font-face {
+  font-family: 'Rubik';
+  src: url('./fonts/Rubik-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: fallback;
+}
