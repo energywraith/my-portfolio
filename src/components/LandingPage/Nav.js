@@ -10,8 +10,10 @@ const Nav = () => {
     if(window.innerWidth < 600) {
       if(!hamburgerState === true) {
         document.body.style.overflowY = "hidden";
+        document.body.style.touchAction = "none";
       } else {
         document.body.style.overflowY = "scroll";
+        document.body.style.touchAction = "auto";
       }
     }
     setHamburgerState(!hamburgerState)
@@ -19,19 +21,19 @@ const Nav = () => {
 
   return (
     <NavContainer>
-      <Link to="Home" smooth={true} duration={500} onClick={() => setHamburgerState(false)} style={{ cursor: "pointer" }}>
+      <Link to="Home" smooth={true} duration={500} style={{ cursor: "pointer" }}>
         <Brand />
       </Link>
 
       <NavLinksContainer>
         <NavLinks active={hamburgerState}>
           <li>
-            <Link to="Projects" isDynamic={true} smooth={true} duration={500} onClick={() => {document.body.style.overflowY = "scroll"; setHamburgerState(false)}}>
+            <Link to="Projects" isDynamic={true} smooth={true} duration={500} onClick={handleHamburgerClick}>
               Projects
             </Link>
           </li>
           <li>
-            <Link to="Contact" isDynamic={true} smooth={true} duration={1000} onClick={() => {document.body.style.overflowY = "scroll"; setHamburgerState(false)}}>
+            <Link to="Contact" isDynamic={true} smooth={true} duration={1000} onClick={handleHamburgerClick}>
               Contact
             </Link>
           </li>
