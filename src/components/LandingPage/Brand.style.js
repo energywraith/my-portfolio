@@ -13,6 +13,8 @@ export const BrandContainer = styled.div`
     height: 100%;
     width: auto;
     border-radius: 4px;
+
+    max-height: 2em;
   }
 
   & span {

@@ -12,7 +12,7 @@ const Footer = () => {
         </List>
         <List>
           <ListHeader> Contact </ListHeader>
-          <li> Email@Email.com </li>
+          <li> jalochadev@gmail.com </li>
           <li> <a href="https://github.com/energywraith" rel="noopener noreferrer"> Github </a> </li>
         </List>
       </Lists>
