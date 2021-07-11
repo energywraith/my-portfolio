@@ -24,7 +24,11 @@ export const ContactFormContainer = styled.section`
     background: url(${backgroundImage}) center center no-repeat;
     background-size: cover;
     filter: brightness(0.2) blur(4px);
-    transform: scale(1.1)
+    transform: scale(1.1);
+
+    @media(max-width: 600px) {
+      filter: brightness(0.4) blur(4px);
+    }
   }
 
   & h3 {

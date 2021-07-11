@@ -23,7 +23,7 @@ export const BrandContainer = styled.div`
 
   @media(max-width: 600px) {
     & {
-      display: none;
+      /* display: none; */
     }
   }
 `

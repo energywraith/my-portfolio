@@ -15,6 +15,7 @@ export const FooterContainer = styled.footer`
   @media(max-width: 600px) {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
+    row-gap: 0.5em;
   }
 `
 
@@ -22,9 +23,12 @@ export const FooterBrand = styled(Brand)`
   font-size: 1.3em;
   padding: 0 3em;
   width: auto;
-
+  
   @media(max-width: 600px) {
-    padding: 0 2em;
+    padding: 0;
+    justify-self: center;
+    width: fit-content;
+    margin-bottom: 0.5em;
   }
 `
 
@@ -49,7 +53,12 @@ export const Lists = styled.div`
   justify-content: center;
 
   @media(max-width: 600px) {
-    flex-direction: column;
+    display: grid;
+    text-align: center;
+
+    & > ul {
+      padding: 0;
+    }
   }
 `
 

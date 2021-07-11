@@ -5,17 +5,12 @@ export const Container = styled.section`
   width: 100%;
   height: 100vh;
   max-height: 100vh;
-
   color: white;
-
   display: grid;
   grid-template: auto 1fr auto / auto auto;
-
   align-items: center;
   justify-content: space-between;
-
   font-family: Rubik;
-
   position: relative;
 
   /* @media(min-width: 600px) { */

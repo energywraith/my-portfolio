@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { Link } from "react-scroll";
-import { NavContainer, NavLinksContainer, NavLinks, Hamburger } from './Nav.style'
-import Brand from "./Brand";
+import { NavContainer, NavBrand, NavLinksContainer, NavLinks, Hamburger } from './Nav.style'
 
 const Nav = () => {
   const [hamburgerState, setHamburgerState] = useState(false)
@@ -22,7 +21,7 @@ const Nav = () => {
   return (
     <NavContainer>
       <Link to="Home" smooth={true} duration={500} style={{ cursor: "pointer" }}>
-        <Brand />
+        <NavBrand />
       </Link>
 
       <NavLinksContainer>

@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components'
+import Brand from "./Brand";
 
 export const NavContainer = styled.nav`
   grid-column: 1/3;
@@ -9,6 +10,12 @@ export const NavContainer = styled.nav`
   & img {
     width: 2em;
     height: 2em;
+  }
+`
+
+export const NavBrand = styled(Brand)`
+  @media(max-width: 600px) {
+    display: none;
   }
 `
 
