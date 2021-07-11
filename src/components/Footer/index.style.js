@@ -35,6 +35,7 @@ export const Copyright = styled.span`
   padding: 1em 0;
   width: 100%;
   border-top: 1px solid #242424;
+  font-size: 0.9em;
 
   @media(max-width: 600px) {
     grid-row: 3;
@@ -52,25 +53,29 @@ export const Lists = styled.div`
   }
 `
 
-export const List = styled.ul`
-  display: flex;
-  flex-direction: column;
-  row-gap: 0.5em;
-
-  & > li > a {
-    color: #b3b3b3;
-    
-    &:hover {
-      color: white;
-    }
-  }
-`
-
 export const ListHeader = styled.li`
   font-weight: 600;
   font-size: 1.1em;
   margin-bottom: 0.5em;
   letter-spacing: 1px;
+`
+
+export const List = styled.ul`
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+
+  & > li:not(${ListHeader}) {
+    color: #b3b3b3;
+
+    & > a {
+      color: #b3b3b3;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
 `
 
 export const LinkStyled = styled(Link)`

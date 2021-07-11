@@ -17,6 +17,8 @@ export const ProjectsList = styled.ul`
 
   @media(max-width: 1000px) {
     padding-left: 0;
+    padding: 1em;
+    box-sizing: border-box;
     margin-top: 1em;
     justify-content: center;
     width: 100%;

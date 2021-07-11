@@ -17,6 +17,6 @@ export const Header = styled.h3`
   }
 
   @media(max-width: 1000px) {
-    padding-left: 0.3em;
+    padding-left: 0.7em;
   }
 `

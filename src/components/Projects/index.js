@@ -51,8 +51,8 @@ const Projects = ({ id }) => {
                 <li> Styled Components </li>
               </ul>
               <span> App based on Genius API, where you can search for songs, based on lyrics or their name.
-                You can also look there for your favourite artists or albums. There are also random songs
-                generated on home page, so you might discover your new favourite song :).
+                You can also look there for your favourite artists or albums. Besides that there are random songs
+                generated on home page, so you might discover your new favourite one :).
               </span>
               <p>
                 Note: First load of live preview may take a while, 

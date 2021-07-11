@@ -58,6 +58,6 @@ export const SubmitButton = styled.button`
   transition: 100ms;
 
   &:hover {
-    box-shadow: 3px 3px 2px lightskyblue;
+    box-shadow: 0px 0px 3px black, 3px 3px 2px lightskyblue;
   }
 `

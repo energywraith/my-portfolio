@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const BrandContainer = styled.div`
   display: grid;
-  grid-template: 1fr 1fr / auto 1fr;
+  grid-template: 1fr 1fr / auto auto;
   column-gap: 0.5em;
   align-items: center;
   width: 100%;
@@ -19,5 +19,11 @@ export const BrandContainer = styled.div`
   & span {
     font-weight: 400;
     font-size: 0.8em;
+  }
+
+  @media(max-width: 600px) {
+    & {
+      display: none;
+    }
   }
 `

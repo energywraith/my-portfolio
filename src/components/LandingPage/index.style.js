@@ -34,9 +34,9 @@ export const Container = styled.section`
   /* } */
 `
 
-export const BreathAnimation = keyframes`
+const BreathAnimation = keyframes`
   from {
-    transform: scale(0.8)
+    transform: scale(0.95)
   }
   to {
     transform: scale(1)
@@ -54,11 +54,18 @@ export const More = styled.div`
     column-gap: 1em;
     padding: 2em;
 
+    &:not(:hover) {
+      animation: ${BreathAnimation} 0.5s infinite alternate-reverse;
+    }
+
+    &:hover {
+      transform: scale(1);
+    }
+
     & img {
       height: 1.5em;
       width: auto;
       filter: invert(1);
-      animation: ${BreathAnimation} 0.5s infinite alternate-reverse;
     }
   }
 
