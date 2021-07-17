@@ -26,8 +26,7 @@ export const ProjectsListContainer = styled.ul`
 
 
   @media(max-width: 1000px) {
-    padding-left: 0;
-    padding: 1em;
+    padding: 0em;
     box-sizing: border-box;
     margin-top: 1em;
     justify-content: center;

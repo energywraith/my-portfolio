@@ -33,6 +33,10 @@ export const ProjectContainer = styled.li`
 export const ProjectName = styled.h4`
   margin: 0;
   font-size: 3em;
+
+  @media(max-width: 1000px) {
+    font-size: 2em;
+  }
 `
 
 export const ProjectTechnologiesList = styled.ul`
