@@ -98,6 +98,7 @@ export const NavLinks = styled.ul`
     top: 0;
     width: 100vw;
     height: 100vh;
+    max-height: -webkit-fill-available;
     background: black;
     z-index: 1;
 

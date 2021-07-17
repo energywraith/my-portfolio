@@ -13,20 +13,18 @@ export const Container = styled.section`
   font-family: Rubik;
   position: relative;
 
-  /* @media(min-width: 600px) { */
-    &:before {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      left: 0%;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background: url(${backgroundImage}) 75% 75% no-repeat;
-      
-      filter: brightness(0.7);
-    }
-  /* } */
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(${backgroundImage}) 75% 75% no-repeat;
+    
+    filter: brightness(0.7);
+  }
 `
 
 const BreathAnimation = keyframes`
@@ -55,7 +53,7 @@ export const More = styled.div`
 
     & > img {
       height: 1.5em;
-      width: auto;
+      width: 1.5em;
       filter: invert(1);
 
       &:hover {
