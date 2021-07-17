@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components'
-import Brand from "./Brand";
+import Brand from "../Brand";
 
 export const NavContainer = styled.nav`
   grid-column: 1/3;

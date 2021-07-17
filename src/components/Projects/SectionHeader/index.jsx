@@ -1,6 +1,6 @@
 import React from "react"
 import Typewriter from "typewriter-effect"
-import { Header } from "./SectionHeader.style"
+import { Header } from "./index.style"
 
 const SectionHeader = React.forwardRef(({ inView, content }, ref) => {
   return (

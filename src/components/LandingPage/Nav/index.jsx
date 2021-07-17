@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link } from "react-scroll";
-import { NavContainer, NavBrand, NavLinksContainer, NavLinks, Hamburger } from './Nav.style'
+import { NavContainer, NavBrand, NavLinksContainer, NavLinks, Hamburger } from './index.style'
 
 const Nav = () => {
   const [hamburgerState, setHamburgerState] = useState(false)

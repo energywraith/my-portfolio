@@ -1,5 +1,5 @@
 import Typewriter from 'typewriter-effect';
-import { IntroductionContainer, Name, Description } from './Introduction.style';
+import { IntroductionContainer, Name, Description } from './index.style';
 
 const getRandomNumberInRange = (min, max) => {
   return Math.ceil((Math.random() * (max - min) + min));

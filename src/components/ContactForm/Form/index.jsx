@@ -1,7 +1,7 @@
 import { useState } from "react";
 import emailjs, { init } from 'emailjs-com';
-
-import { FormContainer, InputGroup, SubmitButton } from './Form.style'
+import { handleValidation } from './validation'
+import { FormContainer, InputGroup, SubmitButton } from './index.style'
 
 const Form = ({ setIsEmailSent }) => {
   const [name, setName] = useState('')
@@ -11,42 +11,10 @@ const Form = ({ setIsEmailSent }) => {
     name: '', email: '', message: ''
   })
 
-  const handleValidation = () => {
-    let formIsValid = true
-    let errors = { name: '', email: '', message: '' }
-
-    if(name === '') {
-      errors = { ...errors, name: "Please fill out this field." }
-      formIsValid = false
-    }
-
-    if(email === '') {
-      errors = { ...errors, email: "Please fill out this field." }
-      formIsValid = false
-
-    } else {
-      let lastAtPos = email.lastIndexOf('@')
-      let lastDotPos = email.lastIndexOf('.')
-
-      if (lastAtPos === -1 || lastDotPos === -1) {
-        errors = { ...errors, email: "Email is not valid." }
-        formIsValid = false
-      }
-    }
-
-    if(message.length < 5) {
-      errors = { ...errors, message: "Message field must be atleast 5 characters long."}
-      formIsValid = false
-    }
-
-    setContactFormErrors(errors)
-    return formIsValid
-  }
-
   const handleSubmit = (event) => {
     event.preventDefault()
 
-    if(handleValidation()) {
+    if(handleValidation(name, email, message, setContactFormErrors)) {
       init("user_FokKGGu0nYvixQZZQCMYz")
 
       const params = {
@@ -57,7 +25,6 @@ const Form = ({ setIsEmailSent }) => {
   
       emailjs.send('service_e2649gi', 'template_8vmolpe', params)
         .then((response) => {
-           console.log('SUCCESS!', response.status, response.text);
            setName('')
            setEmail('')
            setMessage('')

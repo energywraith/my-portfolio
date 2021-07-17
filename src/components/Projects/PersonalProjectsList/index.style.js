@@ -11,17 +11,17 @@ export const fadeIn = keyframes`
 `
 
 export const ProjectsListContainer = styled.ul`
-  margin-top: 3em;
+  margin-top: 2em;
   display: grid;
   grid-template-columns: auto;
-  padding-left: 15em;
+  padding-left: 10em;
   row-gap: 2em;
   width: fit-content;
   height: 100%;
 
   opacity: 0;
   transition: opacity 500ms;
-  transition-delay: 1500ms;
+  transition-delay: 800ms;
   ${props => props.triggeredInView && 'opacity: 1;'};
 
 
