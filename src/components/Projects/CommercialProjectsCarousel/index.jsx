@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import CommercialProject from './CommercialProject';
-import nekiroImg from '../images/nekiro-dev.jpg';
+import nekiroImg from '../images/nekiro-dev.webp';
 import { SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.min.css';
 import { CarouselContainer } from './index.style';
