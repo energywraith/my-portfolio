@@ -1,10 +1,10 @@
 import styled, { keyframes } from "styled-components"
-import backgroundImage from '../../img/LandingPage/splash.png'
+import backgroundImage from '../../img/LandingPage/splash.webp'
 
 export const Container = styled.section`
   width: 100%;
   height: 100vh;
-  max-height: 100vh;
+  max-height: -webkit-fill-available;
   color: white;
   display: grid;
   grid-template: auto 1fr auto / auto auto;
@@ -31,7 +31,7 @@ export const Container = styled.section`
 
 const BreathAnimation = keyframes`
   from {
-    transform: scale(0.95)
+    transform: scale(0.85)
   }
   to {
     transform: scale(1)
@@ -49,18 +49,18 @@ export const More = styled.div`
     column-gap: 1em;
     padding: 2em;
 
-    &:not(:hover) {
+    &:not(:hover) > img {
       animation: ${BreathAnimation} 0.5s infinite alternate-reverse;
     }
 
-    &:hover {
-      transform: scale(1);
-    }
-
-    & img {
+    & > img {
       height: 1.5em;
       width: auto;
       filter: invert(1);
+
+      &:hover {
+        transform: scale(1);
+      }
     }
   }
 

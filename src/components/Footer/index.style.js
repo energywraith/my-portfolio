@@ -25,10 +25,7 @@ export const FooterBrand = styled(Brand)`
   width: auto;
   
   @media(max-width: 600px) {
-    padding: 0;
-    justify-self: center;
-    width: fit-content;
-    margin-bottom: 0.5em;
+    display: none;
   }
 `
 
