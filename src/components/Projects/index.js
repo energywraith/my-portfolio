@@ -8,7 +8,7 @@ const Projects = ({ id }) => {
     <ProjectsContainer id={id}>
       <InView triggerOnce>
         {({ inView, ref, entry }) => (
-          <SectionHeader inView={inView} ref={ref} />
+          <SectionHeader inView={inView} ref={ref} content='Projects' />
         )}
       </InView>
       <InView triggerOnce>
