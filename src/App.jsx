@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 
 import LandingPage from './components/LandingPage'
 import Projects from './components/Projects'
@@ -11,17 +10,15 @@ import GlobalStyle from './GlobalStyles'
 
 const App = () => {
   return (
-    <AppContainer>
+    <div>
       <GlobalStyle />
 
       <LandingPage id="Home" />
       <Projects id="Projects" />
       <ContactForm id="Contact" />
       <Footer />
-    </AppContainer>
+    </div>
   )
 }
-
-const AppContainer = styled.div``
 
 export default App

@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components"
+import InView from "react-intersection-observer"
 import backgroundImage from './images/splash.webp'
 
 export const Container = styled.section`
@@ -12,24 +13,32 @@ export const Container = styled.section`
   justify-content: space-between;
   font-family: Rubik;
   position: relative;
+`
 
-  &:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    left: 0%;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: url(${backgroundImage}) 75% 75% no-repeat;
-    
-    filter: brightness(0.7);
-  }
+export const ContainerBackground = styled.div`
+  position: absolute;
+  z-index: -1;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  transition: background 1s, filter 1s;
+  background: url(${backgroundImage}) 75% 150% no-repeat;
+  filter: brightness(0);
+`
+
+export const InViewScrollController = styled(InView)`
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
 `
 
 const BreathAnimation = keyframes`
   from {
-    transform: scale(0.85)
+    transform: scale(0.8)
   }
   to {
     transform: scale(1)
@@ -39,6 +48,7 @@ const BreathAnimation = keyframes`
 export const More = styled.div`
   cursor: pointer;
   width: fit-content;
+  transition: opacity 700ms;
 
   & a {
     display: flex;

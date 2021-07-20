@@ -11,7 +11,7 @@ export const fadeIn = keyframes`
 `
 
 export const ProjectsListContainer = styled.ul`
-  margin-top: 2em;
+  margin: 2em 0;
   display: grid;
   grid-template-columns: auto;
   padding-left: 10em;

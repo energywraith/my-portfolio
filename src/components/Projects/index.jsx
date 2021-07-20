@@ -15,11 +15,11 @@ const Projects = ({ id }) => {
           </>
         )}
       </InView>
-      <InView triggerOnce>
+      <InView triggerOnce threshold={[0.3, 0.7]}>
         {({ inView, ref, entry }) => (
           <>
-            <SectionHeader inView={inView} ref={ref} content='Commercial Projects' />
-            <CommercialProjectsCarousel inView={inView} />
+            <SectionHeader inView={inView} content='Commercial Projects' />
+            <CommercialProjectsCarousel inView={inView} ref={ref} />
           </>
         )}
       </InView>
