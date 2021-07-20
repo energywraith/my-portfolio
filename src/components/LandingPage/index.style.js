@@ -48,7 +48,7 @@ const BreathAnimation = keyframes`
 export const More = styled.div`
   cursor: pointer;
   width: fit-content;
-  transition: opacity 700ms;
+  transition: visibility 700ms, opacity 700ms;
 
   & a {
     display: flex;

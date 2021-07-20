@@ -18,10 +18,12 @@ const LandingPage = ({ id }) => {
       background.style.backgroundPosition = "75% 80%"
       background.style.filter = "brightness(0.7)"
       more.style.opacity = 1
+      more.style.visibility = 'visible'
     } else {
       background.style.backgroundPosition = "75% 100%"
       background.style.filter = "brightness(0.4)"
       more.style.opacity = 0
+      more.style.visibility = 'hidden'
     }
   }
 
