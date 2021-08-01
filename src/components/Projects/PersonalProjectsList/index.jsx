@@ -7,11 +7,11 @@ const ProjectsList = React.forwardRef(({ inView }, ref) => {
     <ProjectsListContainer triggeredInView={inView} ref={ref}> 
       <Project name='Vans Scrapper Website'
         technologies={['Express', 'MongoDB', 'Puppeteer', 'React', 'React Redux', 'Styled Components']}
-        description='App that scrap data from Vans page every 24 hours, 
-          so they can be displayed with filtering and favourites afterwards, 
-          which is not possible on the official page. 
-          The purpose of creating such project was to create a page that 
-          will be more enjoyable to use than the predecessor.'
+        description="The Vans Scrapper Website is a site I created to 
+        make my search for skateboarding shoes easier. On the original 
+        site some features don't work such as filtering, sometimes even 
+        the shoes show up although they are not available. The data is updated daily at midnight 
+        with the data collected with the scrapper written in puppeteer."
         note='Note: First load of live preview may take a while, 
           because page is hosted on Heroku, which goes idle when there is a small traffic.'
         links={[
