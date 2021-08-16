@@ -1,3 +1,8 @@
-# my-portfolio
-### __Website created using react.__
-### [Live link](https://adamjalocha.pl/)
+# [My portfolio](https://adamjalocha.pl/)
+
+[![Landing page preview](https://media.giphy.com/media/qKJdoed9ocXJjCMu6L/giphy.gif)](https://adamjalocha.pl/)
+
+## Technologies
+
+* React
+* styled-components
