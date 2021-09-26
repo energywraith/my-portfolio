@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const BrandContainer = styled.div`
   display: grid;
@@ -21,9 +21,9 @@ export const BrandContainer = styled.div`
     font-size: 0.8em;
   }
 
-  @media(max-width: 600px) {
+  @media (max-width: 768px) {
     & {
       /* display: none; */
     }
   }
-`
+`;

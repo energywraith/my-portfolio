@@ -1,9 +1,8 @@
-import styled, { keyframes } from "styled-components"
-import InView from "react-intersection-observer"
-import backgroundImage from './images/splash.webp'
+import styled, { keyframes } from "styled-components";
+import InView from "react-intersection-observer";
+import backgroundImage from "./images/splash.webp";
 
 export const Container = styled.section`
-  width: 100%;
   height: 100vh;
   max-height: -webkit-fill-available;
   color: white;
@@ -13,7 +12,7 @@ export const Container = styled.section`
   justify-content: space-between;
   font-family: Rubik;
   position: relative;
-`
+`;
 
 export const ContainerBackground = styled.div`
   position: absolute;
@@ -25,7 +24,7 @@ export const ContainerBackground = styled.div`
   transition: background 1s, filter 1s;
   background: url(${backgroundImage}) 75% 150% no-repeat;
   filter: brightness(0);
-`
+`;
 
 export const InViewScrollController = styled(InView)`
   pointer-events: none;
@@ -34,7 +33,7 @@ export const InViewScrollController = styled(InView)`
   top: 0;
   width: 100%;
   height: 100%;
-`
+`;
 
 const BreathAnimation = keyframes`
   from {
@@ -43,7 +42,7 @@ const BreathAnimation = keyframes`
   to {
     transform: scale(1)
   }
-`
+`;
 
 export const More = styled.div`
   cursor: pointer;
@@ -55,7 +54,7 @@ export const More = styled.div`
     justify-content: start;
     align-items: center;
     column-gap: 1em;
-    padding: 2em;
+    padding: 2em 0;
 
     &:not(:hover) > img {
       animation: ${BreathAnimation} 0.5s infinite alternate-reverse;
@@ -72,7 +71,7 @@ export const More = styled.div`
     }
   }
 
-  @media(max-width: 600px) {
+  @media (max-width: 768px) {
     width: 100%;
     grid-column: 1/3;
 
@@ -82,4 +81,4 @@ export const More = styled.div`
       justify-content: center;
     }
   }
-`
+`;

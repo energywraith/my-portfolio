@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const CarouselProjectCover = styled.img`
   transition: 200ms filter linear, 200ms -webkit-filter linear;
@@ -10,7 +10,7 @@ export const CarouselProjectCover = styled.img`
   object-fit: cover;
   z-index: -1;
   filter: brightness(0.5);
-`
+`;
 
 export const CarouselProject = styled.div`
   position: relative;
@@ -25,8 +25,10 @@ export const CarouselProject = styled.div`
   row-gap: 0.2em;
   cursor: pointer;
   text-align: center;
+  padding: 0 1rem;
 
-  & > h4, & > h5 {
+  & > h4,
+  & > h5 {
     margin: 0;
   }
 
@@ -36,6 +38,6 @@ export const CarouselProject = styled.div`
   }
 
   &:hover ${CarouselProjectCover} {
-    filter: brightness(1)
+    filter: brightness(1);
   }
-`
+`;

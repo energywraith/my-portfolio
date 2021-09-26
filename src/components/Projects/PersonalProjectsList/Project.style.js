@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components"
+import styled, { keyframes } from "styled-components";
 
 export const fadeIn = keyframes`
   from {
@@ -8,18 +8,16 @@ export const fadeIn = keyframes`
   to {
     opacity: 1;
   }
-`
+`;
 
 export const ProjectContainer = styled.li`
   position: relative;
   display: flex;
   flex-direction: column;
   row-gap: 1em;
-  padding: 1em;
-  transition: 0.5s;
+  padding: 1em 0;
   border-radius: 4px;
-  padding-left: 2em;
-  
+
   opacity: 0;
   animation: ${fadeIn} 0.5s forwards;
   animation-delay: 1.5s;
@@ -28,16 +26,20 @@ export const ProjectContainer = styled.li`
     font-size: 0.8em;
     margin: 0;
   }
-`
+
+  @media (max-width: 768px) {
+    padding-left: 1rem;
+  }
+`;
 
 export const ProjectName = styled.h4`
   margin: 0;
   font-size: 3em;
 
-  @media(max-width: 1000px) {
+  @media (max-width: 768px) {
     font-size: 2em;
   }
-`
+`;
 
 export const ProjectTechnologiesList = styled.ul`
   padding: 0;
@@ -49,13 +51,13 @@ export const ProjectTechnologiesList = styled.ul`
   font-size: 0.8em;
   flex-wrap: wrap;
   row-gap: 1em;
-`
+`;
 
 export const ProjectDescription = styled.span`
   max-width: 65ch;
   line-height: 2em;
   font-weight: 100;
-`
+`;
 
 export const ProjectLinks = styled.ul`
   margin-top: 1.5em;
@@ -74,4 +76,4 @@ export const ProjectLinks = styled.ul`
       color: #72bcd4;
     }
   }
-`
+`;

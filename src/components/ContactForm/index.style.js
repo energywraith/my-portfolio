@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import backgroundImage from './images/bg-resized.webp'
+import styled from "styled-components";
+import backgroundImage from "./images/bg-resized.webp";
 
 export const ContactFormContainer = styled.section`
   position: relative;
@@ -11,7 +11,7 @@ export const ContactFormContainer = styled.section`
   row-gap: 1em;
   padding: 5em 0;
   color: white;
-  
+
   overflow: hidden;
   &:before {
     content: "";
@@ -23,31 +23,26 @@ export const ContactFormContainer = styled.section`
     height: 100%;
     background: url(${backgroundImage}) center center no-repeat;
     background-size: cover;
-    filter: brightness(0.2) blur(4px);
+    filter: brightness(0.2) blur(1px);
     transform: scale(1.1);
-
-    @media(max-width: 600px) {
-      filter: brightness(0.4) blur(4px);
-    }
   }
 
-  
   & > h3 {
-    ${props => props.isEmailSent && 'display: none;'}
+    ${(props) => props.isEmailSent && "display: none;"}
     margin: 0;
     font-size: 2em;
     text-align: center;
   }
 
   & > h4 {
-    ${props => props.isEmailSent && 'display: none;'}
+    ${(props) => props.isEmailSent && "display: none;"}
     margin: 0;
     font-size: 1em;
     font-weight: 400;
     text-align: center;
   }
 
-  @media(max-width: 600px) {
+  @media (max-width: 768px) {
     padding: 2em 1em;
 
     & form {
@@ -64,7 +59,7 @@ export const ContactFormContainer = styled.section`
       }
     }
   }
-`
+`;
 
 export const SuccessInformation = styled.span`
   display: flex;
@@ -74,6 +69,7 @@ export const SuccessInformation = styled.span`
   text-shadow: 2px 2px 1px green, 3px 3px 2px black;
   text-align: center;
   font-size: 1.5em;
+  padding: 0 5rem;
 
   & > img {
     height: 2em;
@@ -81,8 +77,9 @@ export const SuccessInformation = styled.span`
     filter: drop-shadow(0px 0px 1px green);
   }
 
-  @media(max-width: 1000px) {
+  @media (max-width: 1200px) {
     flex-direction: column;
     justify-content: center;
+    padding: 0 2rem;
   }
-`
+`;

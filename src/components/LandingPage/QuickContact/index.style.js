@@ -1,7 +1,7 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const QuickContactList = styled.ul`
-  padding: 0em 1em 5em 0em;
+  padding-bottom: 5rem;
   grid-column: 2;
   grid-row: 2/4;
   display: flex;
@@ -26,12 +26,12 @@ export const QuickContactList = styled.ul`
     height: 100%;
   }
 
-  @media(max-width: 600px) {
+  @media (max-width: 768px) {
     display: none;
   }
-`
+`;
 
 export const VerticalLine = styled.hr`
   border: 1px solid rgba(255, 255, 255, 0.5);
   height: 10vh;
-`
+`;

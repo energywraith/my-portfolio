@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components'
- 
+import { createGlobalStyle } from "styled-components";
+
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
@@ -16,6 +16,17 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
     color: white;
   }
-`
+
+  .rwd-container {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 768px) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+`;
 
 export default GlobalStyle;

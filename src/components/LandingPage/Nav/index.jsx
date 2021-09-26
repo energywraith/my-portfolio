@@ -1,13 +1,19 @@
-import { useState } from 'react'
+import { useState } from "react";
 import { Link } from "react-scroll";
-import { NavContainer, NavBrand, NavLinksContainer, NavLinks, Hamburger } from './index.style'
+import {
+  NavContainer,
+  NavBrand,
+  NavLinksContainer,
+  NavLinks,
+  Hamburger,
+} from "./index.style";
 
 const Nav = () => {
-  const [hamburgerState, setHamburgerState] = useState(false)
-  
+  const [hamburgerState, setHamburgerState] = useState(false);
+
   const handleHamburgerClick = () => {
-    if(window.innerWidth < 600) {
-      if(!hamburgerState === true) {
+    if (window.innerWidth < 768) {
+      if (!hamburgerState === true) {
         document.body.style.overflowY = "hidden";
         document.body.style.touchAction = "none";
       } else {
@@ -15,35 +21,54 @@ const Nav = () => {
         document.body.style.touchAction = "auto";
       }
     }
-    setHamburgerState(!hamburgerState)
-  }
+    setHamburgerState(!hamburgerState);
+  };
 
   return (
     <NavContainer>
-      <Link to="Home" smooth={true} duration={500} style={{ cursor: "pointer" }}>
+      <Link
+        to="Home"
+        smooth={true}
+        duration={500}
+        style={{ cursor: "pointer" }}
+      >
         <NavBrand />
       </Link>
 
       <NavLinksContainer>
         <NavLinks active={hamburgerState}>
           <li>
-            <Link to="Projects" isDynamic={true} smooth={true} duration={500} onClick={handleHamburgerClick}>
+            <Link
+              to="Projects"
+              isDynamic={true}
+              smooth={true}
+              duration={500}
+              onClick={handleHamburgerClick}
+            >
               Projects
             </Link>
           </li>
           <li>
-            <Link to="Contact" isDynamic={true} smooth={true} duration={1000} onClick={handleHamburgerClick}>
+            <Link
+              to="Contact"
+              isDynamic={true}
+              smooth={true}
+              duration={1000}
+              onClick={handleHamburgerClick}
+            >
               Contact
             </Link>
           </li>
         </NavLinks>
-        
+
         <Hamburger active={hamburgerState} onClick={handleHamburgerClick}>
-          <span /><span /><span />
+          <span />
+          <span />
+          <span />
         </Hamburger>
       </NavLinksContainer>
     </NavContainer>
-  )
-}
+  );
+};
 
-export default Nav
+export default Nav;

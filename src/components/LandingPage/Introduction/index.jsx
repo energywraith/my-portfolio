@@ -1,21 +1,21 @@
-import Typewriter from 'typewriter-effect';
-import { IntroductionContainer, Name, Description } from './index.style';
+import Typewriter from "typewriter-effect";
+import { IntroductionContainer, Name, Description } from "./index.style";
 
 const getRandomNumberInRange = (min, max) => {
-  return Math.ceil((Math.random() * (max - min) + min));
-}
+  return Math.ceil(Math.random() * (max - min) + min);
+};
 
 const misSpell = (string) => {
-  const position = getRandomNumberInRange(1, string.length - 1)
+  const position = getRandomNumberInRange(1, string.length - 1);
 
-  const misSpelledString = `${string.slice(0, position)}bd`
-  const rest = string.slice(position, string.length)
+  const misSpelledString = `${string.slice(0, position)}bd`;
+  const rest = string.slice(position, string.length);
 
-  return [ misSpelledString, rest ]
-}
+  return [misSpelledString, rest];
+};
 
 const Introduction = () => {
-  const [ misSpelledString, rest ] = misSpell("Adam Jałocha")
+  const [misSpelledString, rest] = misSpell("Adam Jałocha");
 
   return (
     <IntroductionContainer>
@@ -29,16 +29,16 @@ const Introduction = () => {
               .deleteChars(2)
               .typeString(rest)
               .pauseFor(1000)
-              .callFunction(state => state.elements.cursor.style.display = "none")
-              .start()
+              .callFunction(
+                (state) => (state.elements.cursor.style.display = "none")
+              )
+              .start();
           }}
         />
       </Name>
-      <Description>
-        I am a self-taught front-end developer.
-      </Description>
+      <Description>I am a self-taught front-end developer.</Description>
     </IntroductionContainer>
-  )
-}
+  );
+};
 
-export default Introduction
+export default Introduction;

@@ -1,8 +1,7 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const Header = styled.h3`
   margin: 0;
-  padding-left: 2em;
   font-weight: 400;
   width: fit-content;
   color: white;
@@ -17,8 +16,8 @@ export const Header = styled.h3`
     padding-bottom: 0.1em;
   }
 
-  @media(max-width: 1000px) {
-    padding-left: 0.7em;
+  @media (max-width: 768px) {
+    padding-left: 1rem;
     font-size: 1.8em;
   }
-`
+`;
