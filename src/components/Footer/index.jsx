@@ -1,5 +1,5 @@
 import Contact from "./Contact";
-import { FooterContainer, FooterBrand, About, Copyright } from "./index.style";
+import { FooterContainer, About, Copyright } from "./index.style";
 
 const Footer = () => {
   return (
@@ -7,16 +7,17 @@ const Footer = () => {
       <About>
         <h3> Adam Jałocha </h3>
         <p>
-          I'm not good at self-descriptions, so I thought that I could give you
-          a reason why I chose that road. I find it fascinating how even minor
-          changes like colors, element positioning can change our perception on
-          idea, topic or product. Also, the fact how many people I can help or
-          provide fun by creating a website is astonishing.
+          I'm not good at self-descriptions, so I thought that I could give you the
+          story of how I got interested in website coding - in a nutshell :P.
         </p>
-        <span>It's quite cool, don't you think?</span>
+        <p>
+          I first encountered web technologies in technical school, and I found it really fun,
+          even though the methods were really provisional :D. After having some fun with website
+          creation, I have decided it is something I would like to do professionally, aaaand here I am.
+        </p>
       </About>
       <Contact />
-      <Copyright> © 2021 Adam Jałocha </Copyright>
+      <Copyright> © 2022 Adam Jałocha </Copyright>
     </FooterContainer>
   );
 };
