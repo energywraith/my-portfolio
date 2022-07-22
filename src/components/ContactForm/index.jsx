@@ -1,10 +1,11 @@
-import { useState } from "react";
-import Form from "./Form";
-import postmanSvg from './images/postman.svg'
-import { ContactFormContainer, SuccessInformation } from "./index.style";
+import React, { useState } from 'react';
+import PropTypes from 'prop-types';
+import Form from './Form';
+import postmanSvg from './images/postman.svg';
+import { ContactFormContainer, SuccessInformation } from './index.style';
 
-const ContactForm = ({ id }) => {
-  const [isEmailSent, setIsEmailSent] = useState(false)
+function ContactForm({ id }) {
+  const [isEmailSent, setIsEmailSent] = useState(false);
 
   return (
     <ContactFormContainer id={id} isEmailSent={isEmailSent}>
@@ -13,13 +14,19 @@ const ContactForm = ({ id }) => {
       {
         !isEmailSent
           ? <Form setIsEmailSent={setIsEmailSent} />
-          : <SuccessInformation>
-              <img src={postmanSvg} alt='Postman is in hurry' />
+          : (
+            <SuccessInformation>
+              <img src={postmanSvg} alt="Postman is in hurry" />
               Your email has been successfully sent, I will try to reply as fast as possible.
             </SuccessInformation>
+          )
       }
     </ContactFormContainer>
-  )
+  );
 }
 
-export default ContactForm
+ContactForm.propTypes = {
+  id: PropTypes.string.isRequired,
+};
+
+export default ContactForm;

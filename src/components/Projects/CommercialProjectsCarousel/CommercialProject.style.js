@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const CarouselProjectCover = styled.img`
   transition: 200ms filter linear, 200ms -webkit-filter linear;

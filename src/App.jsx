@@ -1,14 +1,14 @@
-import React from 'react'
+import React from 'react';
 
-import LandingPage from './components/LandingPage'
-import Projects from './components/Projects'
-import ContactForm from './components/ContactForm'
-import Footer from './components/Footer'
+import LandingPage from './components/LandingPage';
+import Projects from './components/Projects';
+import ContactForm from './components/ContactForm';
+import Footer from './components/Footer';
 
-import './App.css'
-import GlobalStyle from './GlobalStyles'
+import './App.css';
+import GlobalStyle from './GlobalStyles';
 
-const App = () => {
+function App() {
   return (
     <div>
       <GlobalStyle />
@@ -18,7 +18,7 @@ const App = () => {
       <ContactForm id="Contact" />
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

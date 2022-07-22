@@ -1,9 +1,10 @@
-import { Link } from "react-scroll"
-import github from '../images/github.svg'
-import mail from '../images/mail.svg'
-import { QuickContactList, VerticalLine } from './index.style'
+import React from 'react';
+import { Link } from 'react-scroll';
+import github from '../images/github.svg';
+import mail from '../images/mail.svg';
+import { QuickContactList, VerticalLine } from './index.style';
 
-const QuickContact = () => {
+function QuickContact() {
   return (
     <QuickContactList>
       <VerticalLine />
@@ -13,13 +14,13 @@ const QuickContact = () => {
         </a>
       </li>
       <li>
-        <Link to="Contact" smooth={true} duration={1000} style={{ cursor: "pointer" }}>
+        <Link to="Contact" smooth duration={1000} style={{ cursor: 'pointer' }}>
           <img src={mail} alt="mail icon" />
         </Link>
       </li>
       <VerticalLine />
     </QuickContactList>
-  )
+  );
 }
 
-export default QuickContact
+export default QuickContact;

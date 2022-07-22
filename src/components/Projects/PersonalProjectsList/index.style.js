@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from 'styled-components';
 
 export const fadeIn = keyframes`
   from {
@@ -23,7 +23,7 @@ export const ProjectsListContainer = styled.ul`
   opacity: 0;
   transition: opacity 500ms;
   transition-delay: 800ms;
-  ${(props) => props.triggeredInView && "opacity: 1;"};
+  ${(props) => props.triggeredInView && 'opacity: 1;'};
 
   @media (max-width: 768px) {
     padding: 0em;

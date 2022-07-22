@@ -1,9 +1,8 @@
-import Typewriter from "typewriter-effect";
-import { IntroductionContainer, Name, Description } from "./index.style";
+import React from 'react';
+import Typewriter from 'typewriter-effect';
+import { IntroductionContainer, Name, Description } from './index.style';
 
-const getRandomNumberInRange = (min, max) => {
-  return Math.ceil(Math.random() * (max - min) + min);
-};
+const getRandomNumberInRange = (min, max) => Math.ceil(Math.random() * (max - min) + min);
 
 const misSpell = (string) => {
   const position = getRandomNumberInRange(1, string.length - 1);
@@ -14,8 +13,8 @@ const misSpell = (string) => {
   return [misSpelledString, rest];
 };
 
-const Introduction = () => {
-  const [misSpelledString, rest] = misSpell("Adam Jałocha");
+function Introduction() {
+  const [misSpelledString, rest] = misSpell('Adam Jałocha');
 
   return (
     <IntroductionContainer>
@@ -30,7 +29,8 @@ const Introduction = () => {
               .typeString(rest)
               .pauseFor(1000)
               .callFunction(
-                (state) => (state.elements.cursor.style.display = "none")
+                // eslint-disable-next-line
+                (state) => (state.elements.cursor.style.display = 'none'),
               )
               .start();
           }}
@@ -39,6 +39,6 @@ const Introduction = () => {
       <Description>I am a self-taught front-end developer.</Description>
     </IntroductionContainer>
   );
-};
+}
 
 export default Introduction;

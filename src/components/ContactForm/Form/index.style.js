@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const FormContainer = styled.form`
   display: flex;
@@ -25,7 +25,7 @@ export const FormContainer = styled.form`
     min-height: 10em;
     max-height: 15em;
   }
-`
+`;
 
 export const InputGroup = styled.div`
   width: 100%;
@@ -39,9 +39,9 @@ export const InputGroup = styled.div`
   }
 
   & input, textarea {
-    ${props => props.error !== "" && "border: 1px solid red"}
+    ${(props) => props.error !== '' && 'border: 1px solid red'}
   }
-`
+`;
 
 export const SubmitButton = styled.button`
   background: white;
@@ -60,4 +60,4 @@ export const SubmitButton = styled.button`
   &:hover {
     box-shadow: 0px 0px 3px black, 3px 3px 2px lightskyblue;
   }
-`
+`;

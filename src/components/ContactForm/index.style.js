@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import backgroundImage from "./images/bg-resized.webp";
+import styled from 'styled-components';
+import backgroundImage from './images/bg-resized.webp';
 
 export const ContactFormContainer = styled.section`
   position: relative;
@@ -28,14 +28,14 @@ export const ContactFormContainer = styled.section`
   }
 
   & > h3 {
-    ${(props) => props.isEmailSent && "display: none;"}
+    ${(props) => props.isEmailSent && 'display: none;'}
     margin: 0;
     font-size: 2em;
     text-align: center;
   }
 
   & > h4 {
-    ${(props) => props.isEmailSent && "display: none;"}
+    ${(props) => props.isEmailSent && 'display: none;'}
     margin: 0;
     font-size: 1em;
     font-weight: 400;

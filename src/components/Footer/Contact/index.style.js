@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Link } from "react-scroll";
+import styled from 'styled-components';
+import { Link } from 'react-scroll';
 
 export const Lists = styled.div`
   display: flex;

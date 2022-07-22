@@ -1,24 +1,24 @@
-import { useState } from "react";
-import { Link } from "react-scroll";
+import React, { useState } from 'react';
+import { Link } from 'react-scroll';
 import {
   NavContainer,
   NavBrand,
   NavLinksContainer,
   NavLinks,
   Hamburger,
-} from "./index.style";
+} from './index.style';
 
-const Nav = () => {
+function Nav() {
   const [hamburgerState, setHamburgerState] = useState(false);
 
   const handleHamburgerClick = () => {
     if (window.innerWidth < 768) {
       if (!hamburgerState === true) {
-        document.body.style.overflowY = "hidden";
-        document.body.style.touchAction = "none";
+        document.body.style.overflowY = 'hidden';
+        document.body.style.touchAction = 'none';
       } else {
-        document.body.style.overflowY = "scroll";
-        document.body.style.touchAction = "auto";
+        document.body.style.overflowY = 'scroll';
+        document.body.style.touchAction = 'auto';
       }
     }
     setHamburgerState(!hamburgerState);
@@ -28,9 +28,9 @@ const Nav = () => {
     <NavContainer>
       <Link
         to="Home"
-        smooth={true}
+        smooth
         duration={500}
-        style={{ cursor: "pointer" }}
+        style={{ cursor: 'pointer' }}
       >
         <NavBrand />
       </Link>
@@ -40,8 +40,8 @@ const Nav = () => {
           <li>
             <Link
               to="Projects"
-              isDynamic={true}
-              smooth={true}
+              isDynamic
+              smooth
               duration={500}
               onClick={handleHamburgerClick}
             >
@@ -51,8 +51,8 @@ const Nav = () => {
           <li>
             <Link
               to="Contact"
-              isDynamic={true}
-              smooth={true}
+              isDynamic
+              smooth
               duration={1000}
               onClick={handleHamburgerClick}
             >
@@ -69,6 +69,6 @@ const Nav = () => {
       </NavLinksContainer>
     </NavContainer>
   );
-};
+}
 
 export default Nav;

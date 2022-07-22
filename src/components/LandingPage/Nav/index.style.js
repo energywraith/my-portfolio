@@ -1,5 +1,5 @@
-import styled, { keyframes } from "styled-components";
-import Brand from "../Brand";
+import styled, { keyframes } from 'styled-components';
+import Brand from '../Brand';
 
 export const NavContainer = styled.nav`
   grid-column: 1/3;
@@ -47,7 +47,7 @@ export const Hamburger = styled.button`
 
     &:first-of-type {
       top: 0%;
-      ${(props) => props.active && "top: 50%; transition-delay: 0ms"}
+      ${(props) => props.active && 'top: 50%; transition-delay: 0ms'}
     }
 
     &:nth-of-type(2) {
@@ -56,7 +56,7 @@ export const Hamburger = styled.button`
 
     &:last-of-type {
       top: 100%;
-      ${(props) => props.active && "top: 50%; transition-delay: 0ms"}
+      ${(props) => props.active && 'top: 50%; transition-delay: 0ms'}
     }
   }
 `;
@@ -91,7 +91,7 @@ export const NavLinks = styled.ul`
     padding: 1em;
   }
 
-  ${(props) => props.active && "opacity: 1; display: flex;"}
+  ${(props) => props.active && 'opacity: 1; display: flex;'}
 
   @media(max-width: 768px) {
     animation: ${fadeIn} 0.1s forwards;

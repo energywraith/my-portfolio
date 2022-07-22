@@ -1,7 +1,8 @@
-import Contact from "./Contact";
-import { FooterContainer, About, Copyright } from "./index.style";
+import React from 'react';
+import Contact from './Contact';
+import { FooterContainer, About, Copyright } from './index.style';
 
-const Footer = () => {
+function Footer() {
   return (
     <FooterContainer className="rwd-container">
       <About>
@@ -13,13 +14,14 @@ const Footer = () => {
         <p>
           I first encountered web technologies in technical school, and I found it really fun,
           even though the methods were really provisional :D. After having some fun with website
-          creation, I have decided it is something I would like to do professionally, aaaand here I am.
+          creation, I have decided it is something I would like to do professionally,
+          aaaand here I am.
         </p>
       </About>
       <Contact />
       <Copyright> © 2022 Adam Jałocha </Copyright>
     </FooterContainer>
   );
-};
+}
 
 export default Footer;
