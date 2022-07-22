@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-scroll';
 import { SwiperSlide } from 'swiper/react';
+import nekiroImg from 'assets/nekiro-dev.webp';
 import CommercialProject from './CommercialProject';
-import nekiroImg from '../images/nekiro-dev.webp';
 import 'swiper/swiper-bundle.min.css';
 import { CarouselContainer } from './index.style';
 

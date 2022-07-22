@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Brand from '../LandingPage/Brand';
+import Brand from 'components/Brand';
 
 export const FooterContainer = styled.footer`
   display: grid;

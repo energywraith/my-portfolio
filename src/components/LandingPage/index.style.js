@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 import InView from 'react-intersection-observer';
-import backgroundImage from './images/splash.webp';
+import backgroundImage from 'assets/splash.webp';
 
 export const Container = styled.section`
   height: 100vh;

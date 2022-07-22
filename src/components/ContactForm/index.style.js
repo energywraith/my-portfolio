@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import backgroundImage from './images/bg-resized.webp';
+import backgroundImage from 'assets/contact-background.webp';
 
 export const ContactFormContainer = styled.section`
   position: relative;

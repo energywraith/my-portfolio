@@ -21,4 +21,11 @@ module.exports = {
     'import/prefer-default-export': 0,
     'react/no-unescaped-entities': 0,
   },
+  settings: {
+    'import/resolver': {
+      node: {
+        paths: ['src'],
+      },
+    },
+  },
 };

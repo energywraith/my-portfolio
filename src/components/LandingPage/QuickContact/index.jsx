@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
-import github from '../images/github.svg';
-import mail from '../images/mail.svg';
+import github from 'assets/github.svg';
+import mail from 'assets/mail.svg';
 import { QuickContactList, VerticalLine } from './index.style';
 
 function QuickContact() {

@@ -1,10 +1,9 @@
 import React, { useRef } from 'react';
-import PropTypes from 'prop-types';
 import { Link as ScrollLink } from 'react-scroll';
+import arrowDown from 'assets/arrow-down.svg';
 import Nav from './Nav';
 import Introduction from './Introduction';
 import QuickContact from './QuickContact';
-import arrowDown from './images/arrow-down.svg';
 import {
   Container,
   ContainerBackground,
@@ -12,7 +11,7 @@ import {
   More,
 } from './index.style';
 
-function LandingPage({ id }) {
+function LandingPage() {
   const backgroundRef = useRef();
   const moreRef = useRef();
 
@@ -34,7 +33,7 @@ function LandingPage({ id }) {
   };
 
   return (
-    <Container indicators="all" id={id} className="rwd-container">
+    <Container indicators="all" className="rwd-container">
       <ContainerBackground ref={backgroundRef} />
       <InViewScrollController
         onChange={(inView, entry) => handleScroll(entry)}
@@ -52,9 +51,5 @@ function LandingPage({ id }) {
     </Container>
   );
 }
-
-LandingPage.propTypes = {
-  id: PropTypes.string.isRequired,
-};
 
 export default LandingPage;

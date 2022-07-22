@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Section from './components/Section';
+
 import LandingPage from './components/LandingPage';
 import Projects from './components/Projects';
 import ContactForm from './components/ContactForm';
@@ -10,14 +12,21 @@ import GlobalStyle from './GlobalStyles';
 
 function App() {
   return (
-    <div>
+    <>
       <GlobalStyle />
 
-      <LandingPage id="Home" />
-      <Projects id="Projects" />
-      <ContactForm id="Contact" />
+      <Section id="Home">
+        <LandingPage />
+      </Section>
+      <Section id="Projects">
+        <Projects />
+      </Section>
+      <Section id="Contact">
+        <ContactForm />
+      </Section>
+
       <Footer />
-    </div>
+    </>
   );
 }
 

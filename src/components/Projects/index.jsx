@@ -1,14 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { InView } from 'react-intersection-observer';
 import SectionHeader from './SectionHeader';
 import { ProjectsContainer } from './index.style';
 import PersonalProjectsList from './PersonalProjectsList';
 import CommercialProjectsCarousel from './CommercialProjectsCarousel';
 
-function Projects({ id }) {
+function Projects() {
   return (
-    <ProjectsContainer id={id}>
+    <ProjectsContainer>
       <InView triggerOnce>
         {({ inView, ref }) => (
           <div className="rwd-container">
@@ -34,9 +33,5 @@ function Projects({ id }) {
     </ProjectsContainer>
   );
 }
-
-Projects.propTypes = {
-  id: PropTypes.string.isRequired,
-};
 
 export default Projects;

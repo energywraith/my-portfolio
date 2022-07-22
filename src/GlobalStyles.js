@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { breakpoints } from './Breakpoints.style';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -22,7 +23,7 @@ const GlobalStyle = createGlobalStyle`
     margin-left: auto;
     margin-right: auto;
 
-    @media (min-width: 768px) {
+    @media (min-width: ${breakpoints.tablet}px) {
       padding-left: 2rem;
       padding-right: 2rem;
     }

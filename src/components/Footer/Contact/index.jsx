@@ -1,6 +1,6 @@
 import React from 'react';
-import mailIcon from '../../LandingPage/images/mail.svg';
-import githubIcon from '../../LandingPage/images/github.svg';
+import mailIcon from 'assets/mail.svg';
+import githubIcon from 'assets/github.svg';
 import {
   Lists, List, ListHeader, LinkStyled,
 } from './index.style';

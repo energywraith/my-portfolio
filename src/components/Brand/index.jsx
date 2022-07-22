@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import brandIcon from 'assets/me-annoyed.jpg';
 import { BrandContainer } from './index.style';
-import brandIcon from '../images/66721782.jpg';
 
 function Brand({ className }) {
   return (

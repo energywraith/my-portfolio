@@ -6,7 +6,7 @@ function Footer() {
   return (
     <FooterContainer className="rwd-container">
       <About>
-        <h3> Adam Jałocha </h3>
+        <h3>Adam Jałocha</h3>
         <p>
           I'm not good at self-descriptions, so I thought that I could give you the
           story of how I got interested in website coding - in a nutshell :P.

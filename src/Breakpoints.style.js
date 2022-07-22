@@ -1,3 +1,5 @@
-export const tablet = "768px";
-export const laptop = "1200px";
-export const laptop-xl = "1600px";
+export const breakpoints = {
+  tablet: 768,
+  laptop: 1200,
+  laptopxl: 1600,
+};
