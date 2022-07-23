@@ -7,7 +7,7 @@ export const IntroductionContainer = styled.div`
   flex-direction: column;
   row-gap: 0.3em;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}px) {
     padding: 1em 1em 2em 1em;
     text-align: center;
     align-items: center;
@@ -20,7 +20,7 @@ export const Name = styled.span`
   font-weight: 600;
   letter-spacing: 2px;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}px) {
     font-size: 0.8em;
   }
 `;

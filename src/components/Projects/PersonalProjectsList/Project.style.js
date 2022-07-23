@@ -27,7 +27,7 @@ export const ProjectContainer = styled.li`
     margin: 0;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}px) {
     padding-left: 1rem;
   }
 `;
@@ -36,7 +36,7 @@ export const ProjectName = styled.h4`
   margin: 0;
   font-size: 3em;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}px) {
     font-size: 2em;
   }
 `;
@@ -67,13 +67,13 @@ export const ProjectLinks = styled.ul`
   text-transform: uppercase;
 
   & li a {
-    color: #add8e6;
+    color: ${(props) => props.theme.colors.lightBlue};
     font-size: 1.15em;
     letter-spacing: 1px;
     cursor: pointer;
 
     &:hover {
-      color: #72bcd4;
+      color: ${(props) => props.theme.colors.lightBlueSecondary};
     }
   }
 `;

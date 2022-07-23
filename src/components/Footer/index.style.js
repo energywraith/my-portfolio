@@ -14,18 +14,25 @@ export const FooterContainer = styled.footer`
   padding-left: 2rem;
   padding-right: 2rem;
 
-  color: white;
+  color: ${(props) => props.theme.colors.white};
 
-  @media (max-width: 1200px) {
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}px) {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
+    justify-content: center;
+    row-gap: 0.5em;
+  }
+
+  @media (max-width: ${(props) => props.theme.breakpoints.laptop}px) {
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
     justify-content: center;
     row-gap: 0.5em;
   }
 `;
 
 export const About = styled.div`
-  @media (max-width: 1200px) {
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}px) {
     grid-column: 1/3;
   }
 
@@ -42,7 +49,7 @@ export const About = styled.div`
     margin-top: 2rem;
     opacity: 0.9;
 
-    @media (max-width: 600px) {
+    @media (max-width: ${(props) => props.theme.breakpoints.tablet}px) {
       max-width: none;
     }
   }
@@ -50,7 +57,7 @@ export const About = styled.div`
   & > span {
     display: block;
     margin-top: 1rem;
-    text-shadow: 0 0px 2px white;
+    text-shadow: 0 0px 2px ${(props) => props.theme.colors.white};
   }
 `;
 
@@ -59,7 +66,7 @@ export const FooterBrand = styled(Brand)`
   padding: 0 4rem;
   width: auto;
 
-  @media (max-width: 600px) {
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}px) {
     display: none;
   }
 `;
@@ -72,11 +79,11 @@ export const Copyright = styled.span`
   font-size: 0.9em;
   opacity: 0.8;
 
-  @media (max-width: 1200px) {
+  @media (max-width: ${(props) => props.theme.breakpoints.laptop}px) {
     margin-top: 1rem;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}px) {
     grid-row: 3;
     grid-column: 1/3;
     margin-top: 2rem;

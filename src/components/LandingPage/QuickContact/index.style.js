@@ -26,12 +26,12 @@ export const QuickContactList = styled.ul`
     height: 100%;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}px) {
     display: none;
   }
 `;
 
 export const VerticalLine = styled.hr`
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(${(props) => props.theme.colors.white}, 0.5);
   height: 10vh;
 `;

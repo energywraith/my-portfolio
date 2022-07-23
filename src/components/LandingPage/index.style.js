@@ -5,7 +5,7 @@ import backgroundImage from 'assets/splash.webp';
 export const Container = styled.section`
   height: 100vh;
   max-height: -webkit-fill-available;
-  color: white;
+  color: ${(props) => props.theme.colors.white};
   display: grid;
   grid-template: auto 1fr auto / auto auto;
   align-items: center;

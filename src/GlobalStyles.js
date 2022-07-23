@@ -1,11 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
-import { breakpoints } from './Breakpoints.style';
 
 const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    background: black;
+    background: ${(props) => props.theme.colors.black};
     font-family: Rubik;
   }
 
@@ -15,7 +14,7 @@ const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
-    color: white;
+    color: ${(props) => props.theme.colors.white};
   }
 
   .rwd-container {
@@ -23,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
     margin-left: auto;
     margin-right: auto;
 
-    @media (min-width: ${breakpoints.tablet}px) {
+    @media (min-width: ${(props) => props.theme.breakpoints.tablet}px) {
       padding-left: 2rem;
       padding-right: 2rem;
     }

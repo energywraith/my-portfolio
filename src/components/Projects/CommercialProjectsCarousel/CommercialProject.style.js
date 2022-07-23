@@ -21,7 +21,7 @@ export const CarouselProject = styled.div`
   font-size: 2.5em;
   height: 8em;
   letter-spacing: 2px;
-  box-shadow: 0px 0px 2px #b3b3b3;
+  box-shadow: 0px 0px 2px ${(props) => props.theme.colors.gray};
   row-gap: 0.2em;
   cursor: pointer;
   text-align: center;

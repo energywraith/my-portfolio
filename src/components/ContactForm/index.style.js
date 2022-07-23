@@ -10,7 +10,7 @@ export const ContactFormContainer = styled.section`
   align-items: center;
   row-gap: 1em;
   padding: 5em 0;
-  color: white;
+  color: ${(props) => props.theme.colors.white};
 
   overflow: hidden;
   &:before {
@@ -42,7 +42,7 @@ export const ContactFormContainer = styled.section`
     text-align: center;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}px) {
     padding: 2em 1em;
 
     & form {
@@ -65,8 +65,8 @@ export const SuccessInformation = styled.span`
   display: flex;
   align-items: center;
   gap: 1em;
-  color: white;
-  text-shadow: 2px 2px 1px green, 3px 3px 2px black;
+  color: ${(props) => props.theme.colors.white};
+  text-shadow: 1px 2px 2px ${(props) => props.theme.colors.success}, 3px 3px 2px ${(props) => props.theme.colors.black};
   text-align: center;
   font-size: 1.5em;
   padding: 0 5rem;
@@ -74,10 +74,10 @@ export const SuccessInformation = styled.span`
   & > img {
     height: 2em;
     width: 2em;
-    filter: drop-shadow(0px 0px 1px green);
+    filter: drop-shadow(0px 0px 1px ${(props) => props.theme.colors.success});
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: ${(props) => props.theme.breakpoints.laptop}px) {
     flex-direction: column;
     justify-content: center;
     padding: 0 2rem;

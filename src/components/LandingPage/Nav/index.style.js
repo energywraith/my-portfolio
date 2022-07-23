@@ -14,7 +14,7 @@ export const NavContainer = styled.nav`
 `;
 
 export const NavBrand = styled(Brand)`
-  @media (max-width: 768px) {
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}px) {
     display: none;
   }
 `;
@@ -28,7 +28,7 @@ export const Hamburger = styled.button`
   z-index: 2;
 
   position: relative;
-  @media (max-width: 768px) {
+  @media (max-width: ${(props) => props.theme.breakpoints.tablet}px) {
     margin-right: 2rem;
   }
 
@@ -39,7 +39,7 @@ export const Hamburger = styled.button`
     height: 3px;
     position: absolute;
 
-    background: white;
+    background: ${(props) => props.theme.colors.white};
     border-radius: 3px;
 
     transition: 150ms;
@@ -93,16 +93,15 @@ export const NavLinks = styled.ul`
 
   ${(props) => props.active && 'opacity: 1; display: flex;'}
 
-  @media(max-width: 768px) {
+  @media(max-width: ${(props) => props.theme.breakpoints.tablet}px) {
     animation: ${fadeIn} 0.1s forwards;
     position: fixed;
-    /* position: absolute; */
     left: 0;
     top: 0;
     width: 100vw;
     height: 100%;
     max-height: -webkit-fill-available;
-    background: black;
+    background: ${(props) => props.theme.colors.black};
     z-index: 1;
 
     flex-direction: column;

@@ -20,10 +20,4 @@ export const BrandContainer = styled.div`
     font-weight: 400;
     font-size: 0.8em;
   }
-
-  @media (max-width: 768px) {
-    & {
-      /* display: none; */
-    }
-  }
 `;

@@ -13,7 +13,7 @@ export const FormContainer = styled.form`
     padding: 0.5em;
     font-family: Rubik;
     border-radius: 4px;
-    box-shadow: 2px 2px 1px #424242;
+    box-shadow: 1px 1px 1px ${(props) => props.theme.colors.darkGray};
     font-size: 1em;
     border: 0;
     width: 100%;
@@ -39,25 +39,24 @@ export const InputGroup = styled.div`
   }
 
   & input, textarea {
-    ${(props) => props.error !== '' && 'border: 1px solid red'}
+    ${(props) => props.error !== '' && `border: 1px solid ${props.theme.colors.error}`}
   }
 `;
 
 export const SubmitButton = styled.button`
-  background: white;
+  background: ${(props) => props.theme.colors.white};
   border: 0;
-  color: black;
+  color: ${(props) => props.theme.colors.black};
   border-radius: 4px;
   font-size: 1em;
   cursor: pointer;
   padding: 1em 2em;
   margin-top: 1em;
   font-family: Rubik;
-  box-shadow: 2px 2px 1px #424242;
-
+  box-shadow: 2px 2px 1px ${(props) => props.theme.colors.darkGray};
   transition: 100ms;
 
   &:hover {
-    box-shadow: 0px 0px 3px black, 3px 3px 2px lightskyblue;
+    box-shadow: 0px 0px 3px ${(props) => props.theme.colors.black}, 3px 3px 2px ${(props) => props.theme.colors.lightBlueSecondary};
   }
 `;
