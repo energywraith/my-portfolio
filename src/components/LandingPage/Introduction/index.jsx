@@ -29,8 +29,10 @@ function Introduction() {
               .typeString(rest)
               .pauseFor(1000)
               .callFunction(
-                // eslint-disable-next-line
-                (state) => (state.elements.cursor.style.display = 'none'),
+                ({ elements }) => {
+                  const { cursor } = elements;
+                  cursor.style.display = 'none';
+                },
               )
               .start();
           }}

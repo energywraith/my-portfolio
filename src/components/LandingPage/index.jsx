@@ -36,7 +36,7 @@ function LandingPage() {
     <Container indicators="all" className="rwd-container">
       <ContainerBackground ref={backgroundRef} />
       <InViewScrollController
-        onChange={(inView, entry) => handleScroll(entry)}
+        onChange={(_inView, entry) => handleScroll(entry)}
         threshold={[0, 0.5, 1]}
       />
       <Nav />
