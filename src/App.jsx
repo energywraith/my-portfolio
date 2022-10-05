@@ -1,29 +1,29 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import Section from 'components/Section';
-import LandingPage from 'components/LandingPage';
-import Projects from 'components/Projects';
-import ContactForm from 'components/ContactForm';
-import Footer from 'components/Footer';
+import Projects from 'components/templates/Projects';
+import Section from 'components/core/Section';
+import Banner from 'components/templates/Banner';
+import Contact from 'components/templates/Contact';
+import Footer from 'components/templates/Footer';
 
-import { theme } from 'theme.style';
+import Styled from 'theme.style';
 import GlobalStyle from './GlobalStyles';
 import './App.css';
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={Styled.theme}>
       <GlobalStyle />
 
       <Section id="Home">
-        <LandingPage />
+        <Banner />
       </Section>
       <Section id="Projects">
         <Projects />
       </Section>
       <Section id="Contact">
-        <ContactForm />
+        <Contact />
       </Section>
 
       <Footer />

@@ -7,24 +7,22 @@ module.exports = {
     'plugin:react/recommended',
     'airbnb',
   ],
+  overrides: [
+  ],
   parserOptions: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-    ecmaVersion: 12,
+    ecmaVersion: 'latest',
     sourceType: 'module',
   },
   plugins: [
     'react',
   ],
   rules: {
-    'import/prefer-default-export': 0,
-    'react/no-unescaped-entities': 0,
   },
   settings: {
     'import/resolver': {
       node: {
-        paths: ['src'],
+        extensions: ['.js', '.jsx'],
+        moduleDirectory: ['node_modules', 'src/'],
       },
     },
   },

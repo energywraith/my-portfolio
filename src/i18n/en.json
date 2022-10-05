@@ -1,0 +1,64 @@
+{
+  "translation": {
+    "name": "Adam Jałocha",
+    "description": {
+      "regular": "[There should be a description of me]",
+      "short": "Web developer"
+    },
+    "banner": {
+      "findOutMore": "Find out more about me"
+    },
+    "projects": {
+      "nav": "Projects",
+      "header": "See my work",
+      "livePreview": "Live Preview",
+      "github": "Github",
+      "technologies": {
+        "express": "Express",
+        "mongoDb": "MongoDB",
+        "puppeteer": "Puppeteer",
+        "react": "React",
+        "reactRedux": "React Redux",
+        "styledComponents": "Styled Components"
+      },
+      "vansScrapper": "Vans Scrapper Website",
+      "vansScrapperDescription": "The Vans Scrapper Website is a site I created to make my search for skateboarding shoes easier. On the original site some features don't work such as filtering, sometimes even the shoes show up although they are not available. The data is updated daily at midnight with the data collected with the scrapper written in puppeteer.",
+      "geniusMusic": "Genius music app",
+      "geniusMusicDescription": "App based on Genius API, where you can search for songs, based on lyrics or their name. You can also look there for your favourite artists or albums. Besides that there are random songs generated on home page, so you might discover your new favourite one :).",
+      "herokuNote": "Note: First load of live preview may take a while, because page is hosted on Heroku, which goes idle when there is a small traffic."
+    },
+    "contact": {
+      "nav": "Contact",
+      "header": "Get in touch with me",
+      "description": "Use a contact form or other options listed below",
+      "fields": {
+        "name": "Name",
+        "email": "Email Address",
+        "body": "Message",
+        "submit": "Send a message"
+      },
+      "successText": "Your email has been successfully sent, I will try to reply as fast as possible."
+    },
+    "footer": {
+      "overview": {
+        "header": "OVERVIEW",
+        "home": "Home",
+        "projects": "Projects",
+        "contactMe": "Get in touch with me"
+      },
+      "explore": {
+        "header": "EXPLORE MY WORK",
+        "project1": "Job application tracker",
+        "project3": "Spotifi",
+        "project2": "Winamp but in your browser"
+      },
+      "findMe": {
+        "header": "WHERE YOU CAN FIND ME",
+        "github": "@energywraith",
+        "mail": "jalochadev@gmail.com"
+      },
+      "copyright": "© {{ year }} {{ name }} - ",
+      "madeWithLove": "Made with ♥"
+    }
+  }
+}
