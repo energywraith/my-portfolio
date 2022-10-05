@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.b4021377.css",
-    "main.js": "/static/js/main.135ef45a.js",
+    "main.css": "/static/css/main.1b07b1c6.css",
+    "main.js": "/static/js/main.5908ab32.js",
     "static/media/contact-background.webp": "/static/media/contact-background.08ad671f4ed52c72b641.webp",
+    "static/media/mac-old-school.jpg": "/static/media/mac-old-school.703f02c15bade821e024.jpg",
     "static/media/Rubik-Regular.ttf": "/static/media/Rubik-Regular.a4bece5c270c316c1c24.ttf",
-    "static/media/nekiro-dev.webp": "/static/media/nekiro-dev.bcc606e3b24c8665fad7.webp",
     "static/media/splash.webp": "/static/media/splash.4155db1c3f0bbc74a7d0.webp",
     "static/media/postman.svg": "/static/media/postman.d9f1b59b52035085e568c2f79b3be82c.svg",
     "static/media/mail.svg": "/static/media/mail.dc3b5a362c4ee05c020ac8553bd15c2d.svg",
     "static/media/arrow-down.svg": "/static/media/arrow-down.f16dde91462ed4e46f57842a6db967d6.svg",
     "static/media/github.svg": "/static/media/github.c5ac6b5f2a95da28e2952c0538d9202c.svg",
     "index.html": "/index.html",
-    "main.b4021377.css.map": "/static/css/main.b4021377.css.map",
-    "main.135ef45a.js.map": "/static/js/main.135ef45a.js.map"
+    "main.1b07b1c6.css.map": "/static/css/main.1b07b1c6.css.map",
+    "main.5908ab32.js.map": "/static/js/main.5908ab32.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4021377.css",
-    "static/js/main.135ef45a.js"
+    "static/css/main.1b07b1c6.css",
+    "static/js/main.5908ab32.js"
   ]
 }
