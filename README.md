@@ -13,7 +13,7 @@ I would be very happy if you took a visit and left some feedback on what I could
 ```
 
 ## TODO:
-* Add this kind of [cursor effect](https://blog.hubspot.com/hs-fs/hubfs/swirl%20cursor%20effect.gif?width=650&name=swirl%20cursor%20effect.gif) - https://advanced.team/ - maybe more subtle
+* ~~Add this kind of [cursor effect](https://blog.hubspot.com/hs-fs/hubfs/swirl%20cursor%20effect.gif?width=650&name=swirl%20cursor%20effect.gif) - https://advanced.team/ - maybe more subtle~~  DONE
 * Add some "motion" to the landing page splash - maybe act like gas?
 * Small preview of the projects
 * ~~Improve the structure of the project~~ DONE
