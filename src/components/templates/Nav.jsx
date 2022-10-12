@@ -42,7 +42,7 @@ function Nav() {
               to="Projects"
               isDynamic
               duration={500}
-              onClick={setIsActive}
+              onClick={onHamburgerClick}
               smooth
             >
               {t('projects.nav')}
@@ -53,7 +53,7 @@ function Nav() {
               to="Contact"
               isDynamic
               duration={1000}
-              onClick={setIsActive}
+              onClick={onHamburgerClick}
               smooth
             >
               {t('contact.nav')}
@@ -94,6 +94,7 @@ const Styled = {
     margin-right: 3em;
   `,
   NavLinks: styled.ul`
+    z-index: ${({ theme }) => theme.layers.modal};
     padding: 0;
     margin: 0;
     opacity: 0;
@@ -108,7 +109,6 @@ const Styled = {
     width: 100vw;
     height: 100%;
     max-height: -webkit-fill-available;
-    z-index: 1;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;

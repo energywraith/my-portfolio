@@ -6,6 +6,7 @@ import Section from 'components/core/Section';
 import Banner from 'components/templates/Banner';
 import Contact from 'components/templates/Contact';
 import Footer from 'components/templates/Footer';
+import MouseTrail from 'components/core/MouseTrail';
 
 import Styled from 'theme.style';
 import GlobalStyle from './GlobalStyles';
@@ -15,6 +16,7 @@ function App() {
   return (
     <ThemeProvider theme={Styled.theme}>
       <GlobalStyle />
+      <MouseTrail />
 
       <Section id="Home">
         <Banner />
@@ -27,6 +29,7 @@ function App() {
       </Section>
 
       <Footer />
+
     </ThemeProvider>
   );
 }

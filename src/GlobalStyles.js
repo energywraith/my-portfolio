@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     background: ${(props) => props.theme.colors.black};
     font-family: Rubik;
+    position: relative;
   }
 
   ul {

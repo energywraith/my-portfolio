@@ -20,9 +20,9 @@ const Styled = {
     cursor: pointer;
     width: 3em;
     height: 2em;
-    z-index: 2;
     position: relative;
     margin-right: 2em;
+    z-index: ${({ theme }) => theme.layers.modal + 1};
     
     @media (min-width: ${({ theme }) => theme.breakpoints.tablet}px) {
       margin-right: 0;

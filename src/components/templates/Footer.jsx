@@ -55,8 +55,19 @@ const Styled = {
   Footer: styled.footer`
     color: ${({ theme }) => theme.colors.white};
     padding-top: 20px;
-    background: #0f1012;
-    box-shadow: 0 0 2px #0f1012;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: ${({ theme }) => theme.layers.background};
+      box-shadow: 0 0 2px #0f1012;
+      background: #0f1012;
+    }
   `,
   Container: styled(Container)`
     display: flex;
@@ -70,13 +81,13 @@ const Styled = {
     height: 100%;
     overflow: hidden;
     pointer-events: none;
-    z-index: 0;
     
     img {
       position: relative;
       top: -25%;
       right: -25%;
       height: 200%;
+      z-index: ${({ theme }) => theme.layers.background};
 
       opacity: 0.1;
       @media (min-width: 1200px) {
@@ -87,7 +98,6 @@ const Styled = {
   Lists: styled.div`
     display: flex;
     padding: 20px 0;
-    z-index: 1;
     flex-wrap: wrap;
     column-gap: 60px;
     row-gap: 60px;

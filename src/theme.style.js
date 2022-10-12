@@ -15,5 +15,10 @@ export default {
       success: '#3B7D52',
       error: '#D80032',
     },
+    layers: {
+      modal: 2,
+      mouseTrail: -1,
+      background: -2,
+    },
   },
 };

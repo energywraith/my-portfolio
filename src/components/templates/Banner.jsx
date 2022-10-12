@@ -51,7 +51,7 @@ const Styled = {
   `,
   ContainerBackground: styled.div`
     position: absolute;
-    z-index: -1;
+    z-index: ${({ theme }) => theme.layers.background};
     left: 0%;
     top: 0%;
     width: 100%;
