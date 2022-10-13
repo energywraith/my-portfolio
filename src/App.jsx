@@ -1,11 +1,11 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import Projects from 'components/templates/Projects';
+import Projects from 'components/templates/sections/Projects';
+import Banner from 'components/templates/sections/Banner';
+import Contact from 'components/templates/sections/Contact';
+import Footer from 'components/templates/sections/Footer';
 import Section from 'components/core/Section';
-import Banner from 'components/templates/Banner';
-import Contact from 'components/templates/Contact';
-import Footer from 'components/templates/Footer';
 import MouseTrail from 'components/core/MouseTrail';
 
 import Styled from 'theme.style';
@@ -29,7 +29,6 @@ function App() {
       </Section>
 
       <Footer />
-
     </ThemeProvider>
   );
 }

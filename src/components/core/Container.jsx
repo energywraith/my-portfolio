@@ -8,14 +8,13 @@ function Container({ className, children }) {
 
 const Styled = {
   Container: styled.div`
-
     padding-left: 2rem;
-      padding-right: 2rem;
+    padding-right: 2rem;
 
     @media (min-width: ${(props) => props.theme.breakpoints.tablet}px) {
       max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
+      margin-left: auto;
+      margin-right: auto;
     }
   `,
 };
