@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import styled, { css } from 'styled-components';
-import Brand from 'components/core/Brand';
+// import Brand from 'components/core/Brand';
 import Hamburger from 'components/core/Hamburger';
 import Animations from 'utils/Animations';
 import { useTranslation } from 'react-i18next';
@@ -26,14 +26,14 @@ function Nav() {
 
   return (
     <Styled.Nav>
-      <Styled.BrandLink
+      {/* <Styled.BrandLink
         to="Home"
         smooth
         duration={500}
         style={{ cursor: 'pointer' }}
       >
         <Brand />
-      </Styled.BrandLink>
+      </Styled.BrandLink> */}
 
       <Styled.NavLinksWrapper>
         <Styled.NavLinks active={isActive}>
@@ -132,7 +132,7 @@ const Styled = {
       height: fit-content;
       max-height: unset;
       flex-direction: row;
-      font-size: 1em;
+      font-size: 1.2em;
       background: none;
     }
   `,

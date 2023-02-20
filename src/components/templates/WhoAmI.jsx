@@ -10,24 +10,26 @@ function WhoAmI() {
 
   return (
     <Styled.Wrapper>
-      <Styled.Header
-        onInit={(typewriter) => {
-          typewriter
-            .changeDelay(80)
-            .typeString(misSpelledString)
-            .pauseFor(100)
-            .deleteChars(2)
-            .typeString(rest)
-            .pauseFor(1000)
-            .callFunction(
-              ({ elements }) => {
-                const { cursor } = elements;
-                cursor.style.display = 'none';
-              },
-            )
-            .start();
-        }}
-      />
+      <Styled.Header>
+        <Typewriter
+          onInit={(typewriter) => {
+            typewriter
+              .changeDelay(80)
+              .typeString(misSpelledString)
+              .pauseFor(100)
+              .deleteChars(2)
+              .typeString(rest)
+              .pauseFor(1000)
+              .callFunction(
+                ({ elements }) => {
+                  const { cursor } = elements;
+                  cursor.style.display = 'none';
+                },
+              )
+              .start();
+          }}
+        />
+      </Styled.Header>
       <Styled.Description>{t('description.regular')}</Styled.Description>
     </Styled.Wrapper>
   );
@@ -52,21 +54,20 @@ const Styled = {
       font-size: 4em;
     }
   `,
-  Header: styled(Typewriter)`
-    font-weight: 600;
-    letter-spacing: 2px;
+  Header: styled.h3`
     font-size: 0.8em;
-
+    font-family: 'Poppins';
+    margin: 0;
+    
     @media (min-width: ${(props) => props.theme.breakpoints.tablet}px) {
-      font-size: 1em;
+      line-height: 1.2em;
+      font-size: 1.4em;
     }
   `,
   Description: styled.p`
     margin: 0;
     padding: 0;
     font-size: 0.3em;
-    font-weight: 100;
-    max-width: 50ch;
     letter-spacing: 1px;
   `,
 };

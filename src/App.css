@@ -6,3 +6,9 @@ moving them to css file fixes the problem */
   font-weight: 400;
   font-display: fallback;
 }
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+}

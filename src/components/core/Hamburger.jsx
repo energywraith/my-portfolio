@@ -18,8 +18,8 @@ const Styled = {
     background: transparent;
     border: 0;
     cursor: pointer;
-    width: 3em;
-    height: 2em;
+    width: 3.5em;
+    height: 2.5em;
     position: relative;
     margin-right: 2em;
     z-index: ${({ theme }) => theme.layers.modal + 1};

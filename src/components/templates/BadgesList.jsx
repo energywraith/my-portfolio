@@ -33,7 +33,9 @@ const Styled = {
     align-items: center;
     row-gap: 1em;
     display: none;
-  
+    font-size: 1.1rem;
+    margin-right: -1rem;
+
     & li a {
       display: inline-block;
       padding: 1em;
