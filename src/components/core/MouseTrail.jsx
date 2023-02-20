@@ -11,13 +11,18 @@ function MouseTrail() {
 
 const Styled = {
   Trail: styled.svg`
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    pointer-events: none;
-    z-index: ${({ theme }) => theme.layers.mouseTrail};
+    display: none;
+
+    @media (hover: hover) {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      pointer-events: none;
+      z-index: ${({ theme }) => theme.layers.mouseTrail};
+    }
   `,
 };
 
