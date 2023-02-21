@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.564e1c23.css",
-    "main.js": "/static/js/main.9d4fc26a.js",
+    "main.js": "/static/js/main.c8cee895.js",
     "static/media/saintjulianxv.png": "/static/media/saintjulianxv.b429f8516def857d87f8.png",
     "static/media/mac-old-school.jpg": "/static/media/mac-old-school.703f02c15bade821e024.jpg",
     "static/media/Poppins-Regular.ttf": "/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
@@ -14,10 +14,10 @@
     "index.html": "/index.html",
     "static/media/linkedin.svg": "/static/media/linkedin.1633a96222d704c5ee5222386dd242bd.svg",
     "main.564e1c23.css.map": "/static/css/main.564e1c23.css.map",
-    "main.9d4fc26a.js.map": "/static/js/main.9d4fc26a.js.map"
+    "main.c8cee895.js.map": "/static/js/main.c8cee895.js.map"
   },
   "entrypoints": [
     "static/css/main.564e1c23.css",
-    "static/js/main.9d4fc26a.js"
+    "static/js/main.c8cee895.js"
   ]
 }
