@@ -8,8 +8,6 @@ import Container from 'components/core/Container';
 import { InView } from 'react-intersection-observer';
 import Header from 'components/core/Header';
 
-// 6. Get in touch with me - wydaje się być całkiem oderwane od reszty strony.
-
 function Contact() {
   const { t } = useTranslation();
 

@@ -119,7 +119,10 @@ const Styled = {
 
     & span {
       align-self: flex-start;
-      height: 1em;
+      height: 1.3em;
+      font-size: 0.8em;
+      margin-top: -0.4rem;
+      color: ${({ theme }) => theme.colors.error};
     }
 
     & input, textarea {
