@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8e770e77.css",
-    "main.js": "/static/js/main.69852df5.js",
+    "main.js": "/static/js/main.f7405a47.js",
     "static/media/contact-background.webp": "/static/media/contact-background.08ad671f4ed52c72b641.webp",
     "static/media/mac-old-school.jpg": "/static/media/mac-old-school.703f02c15bade821e024.jpg",
     "static/media/Poppins-Regular.ttf": "/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
@@ -12,11 +12,12 @@
     "static/media/arrow-down.svg": "/static/media/arrow-down.f16dde91462ed4e46f57842a6db967d6.svg",
     "static/media/github.svg": "/static/media/github.c5ac6b5f2a95da28e2952c0538d9202c.svg",
     "index.html": "/index.html",
+    "static/media/linkedin.svg": "/static/media/linkedin.1633a96222d704c5ee5222386dd242bd.svg",
     "main.8e770e77.css.map": "/static/css/main.8e770e77.css.map",
-    "main.69852df5.js.map": "/static/js/main.69852df5.js.map"
+    "main.f7405a47.js.map": "/static/js/main.f7405a47.js.map"
   },
   "entrypoints": [
     "static/css/main.8e770e77.css",
-    "static/js/main.69852df5.js"
+    "static/js/main.f7405a47.js"
   ]
 }
