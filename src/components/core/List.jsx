@@ -71,13 +71,14 @@ const Styled = {
     font-size: 1.1em;
     display: flex;
     align-items: center;
+    height: 1.25em;
 
     & img {
       margin-right: 1rem;
       filter: invert(1);
       opacity: 0.8;
-      width: 1.5em;
-      height: 1.5em;
+      width: 1.25em;
+      height: 1.25em;
     }
 
     & a {

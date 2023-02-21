@@ -2,6 +2,7 @@ import Line from 'components/core/Line';
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-scroll';
+import LinkedInSVG from 'assets/linkedin.svg';
 import GithubSVG from 'assets/github.svg';
 import MailSVG from 'assets/mail.svg';
 
@@ -12,6 +13,11 @@ function BadgesList() {
       <li>
         <a href="https://github.com/energywraith" rel="noopener noreferrer">
           <img src={GithubSVG} alt="github logo" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/adam-jalocha/" rel="noopener noreferrer">
+          <img src={LinkedInSVG} alt="linkedin logo" />
         </a>
       </li>
       <li>

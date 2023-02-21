@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import List from 'components/core/List';
 import MailIconSVG from 'assets/mail.svg';
 import GithubIconSVG from 'assets/github.svg';
+import LinkedInIconSvg from 'assets/linkedin.svg';
 import OldSchoolMacJPG from 'assets/mac-old-school.jpg';
 import Container from 'components/core/Container';
 
@@ -37,6 +38,7 @@ function Footer() {
             header={t('footer.findMe.header')}
             elements={[
               { label: t('footer.findMe.github'), icon: GithubIconSVG, to: 'https://github.com/energywraith' },
+              { label: t('footer.findMe.linkedin'), icon: LinkedInIconSvg, to: 'https://www.linkedin.com/in/adam-jalocha/' },
               { label: t('footer.findMe.mail'), icon: MailIconSVG, to: 'mailto:jalochadev@gmail.com' },
             ]}
             isVertical

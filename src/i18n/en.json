@@ -55,6 +55,7 @@
       "findMe": {
         "header": "WHERE YOU CAN FIND ME",
         "github": "@energywraith",
+        "linkedin": "adam-jalocha",
         "mail": "jalochadev@gmail.com"
       },
       "copyright": "© {{ year }} {{ name }} - ",
