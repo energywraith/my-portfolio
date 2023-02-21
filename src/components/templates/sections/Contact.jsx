@@ -1,88 +1,84 @@
-import React, { useState } from 'react';
-import postmanSvg from 'assets/postman.svg';
+import React from 'react';
+import ContactPng from 'assets/saintjulianxv.png';
 import styled from 'styled-components';
-import backgroundImage from 'assets/contact-background.webp';
 import ContactForm from 'components/templates/ContactForm';
 import { useTranslation } from 'react-i18next';
+import Container from 'components/core/Container';
+
+import { InView } from 'react-intersection-observer';
+import Header from 'components/core/Header';
+
+// 6. Get in touch with me - wydaje się być całkiem oderwane od reszty strony.
 
 function Contact() {
   const { t } = useTranslation();
-  const [isEmailSent, setIsEmailSent] = useState(false);
-
-  const handleEmailSend = (isSuccess) => {
-    setIsEmailSent(isSuccess);
-  };
 
   return (
-    <Styled.Wrapper isEmailSent={isEmailSent}>
-      <h3>{t('contact.header')}</h3>
+    <Styled.Wrapper>
+      <Styled.ImageWrapper>
+        <img src={ContactPng} alt="@saintjulianxv" />
+      </Styled.ImageWrapper>
+      <InView triggerOnce>
+        {({ inView, ref }) => (
+          <Header
+            inView={inView}
+            ref={ref}
+          >
+            {t('contact.header')}
+          </Header>
+        )}
+      </InView>
       <h4>{t('contact.description')}</h4>
-      {
-        !isEmailSent
-          ? <ContactForm onEmailSend={handleEmailSend} />
-          : (
-            <Styled.Success>
-              <img src={postmanSvg} alt="Postman is in hurry" />
-              {t('contact.successText')}
-            </Styled.Success>
-          )
-      }
+      <ContactForm />
     </Styled.Wrapper>
   );
 }
 
 const Styled = {
-  Wrapper: styled.section`
+  Wrapper: styled(Container)`
     position: relative;
-    min-height: 30em;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     justify-content: center;
     align-items: center;
-    row-gap: 1em;
+    grid-template-rows: auto auto 1fr;
+    gap: 1rem 2rem;
     color: ${({ theme }) => theme.colors.white};
-    overflow: hidden;
-    padding: 2em 1em;
+    padding-bottom: 4rem;
+    min-height: 24rem;
 
     @media (min-width: ${({ theme }) => theme.breakpoints.tablet}px) {
-      padding: 5em 0;
+      grid-template-columns: auto 1fr;
     }
 
-    &:before {
-      content: "";
-      position: absolute;
-      z-index: ${({ theme }) => theme.layers.background};
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background: url(${backgroundImage}) center center no-repeat;
-      background-size: cover;
-      filter: brightness(0.2) blur(1px);
-      transform: scale(1.1);
+    @media (min-width: ${({ theme }) => theme.breakpoints.laptop}px) {
+      column-gap: 4em;
     }
 
     & > h3 {
-      ${({ isEmailSent }) => isEmailSent && 'display: none;'}
-      margin: 0;
-      font-size: 2em;
-      text-align: center;
+      @media (min-width: ${({ theme }) => theme.breakpoints.tablet}px) {
+        margin: 0;
+        font-size: 1.7em;
+        line-height: 1.4em;
+        text-transform: uppercase;
+        height: 1.2em;
+      }
     }
 
     & > h4 {
-      ${({ isEmailSent }) => isEmailSent && 'display: none;'}
       margin: 0;
       font-size: 1em;
       font-weight: 400;
-      text-align: center;
+      max-width: 80ch;
+      color: ${(props) => props.theme.colors.lightGray};
+      line-height: 1.8em;
+      margin-top: 1rem;
     }
 
     & form {
       width: 100%;
-      padding: 1em;
       box-sizing: border-box;
 
-      & div {
+      & > div {
         padding-right: 1em;
 
         & textarea {
@@ -91,27 +87,21 @@ const Styled = {
       }
     }
   `,
-  Success: styled.div`
-    display: flex;
-    align-items: center;
-    gap: 1em;
-    color: ${({ theme }) => theme.colors.white};
-    text-shadow: 1px 2px 2px ${({ theme }) => theme.colors.success}, 3px 3px 2px ${({ theme }) => theme.colors.black};
-    text-align: center;
-    font-size: 1.5em;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 2rem;
-
+  ImageWrapper: styled.div`
+    grid-row: 1/4;
+    grid-column: 1;
+    max-width: 22rem;
+    z-index: ${(props) => props.theme.layers.background};
+    display: none;
+    
     & > img {
-      height: 2em;
-      width: 2em;
-      filter: drop-shadow(0px 0px 1px ${({ theme }) => theme.colors.success});
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
     }
 
-    @media (min-width: ${({ theme }) => theme.breakpoints.laptop}px) {
-      flex-direction: row;
-      padding: 0 5rem;
+    @media (min-width: ${({ theme }) => theme.breakpoints.tablet}px) {
+      display: block;
     }
   `,
 };

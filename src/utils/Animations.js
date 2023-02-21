@@ -13,4 +13,8 @@ export default {
     from { transform: scale(0.8)}
     to { transform: scale(1) }
   `,
+  loader: keyframes`
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  `,
 };

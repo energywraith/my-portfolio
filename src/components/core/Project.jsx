@@ -39,15 +39,11 @@ const Styled = {
     display: flex;
     flex-direction: column;
     row-gap: 1em;
-    padding: 1em 0 0 1rem;
+    padding-top: 1rem;
     border-radius: 4px;
     opacity: 0;
     animation: ${Animations.fadeIn} 0.5s forwards;
     animation-delay: 1.5s;
-
-    @media (min-width: ${(props) => props.theme.breakpoints.tablet}px) {
-      padding-left: 0;
-    }
   `,
   Name: styled.h4`
     margin: 0;

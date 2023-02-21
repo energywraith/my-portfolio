@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import emailjs, { init } from 'emailjs-com';
 import styled from 'styled-components';
-import handleContactValidation from 'utils/handleContactValidation';
-import PropTypes from 'prop-types';
+import { useForm } from '@formspree/react';
 import { useTranslation } from 'react-i18next';
+import handleContactValidation from 'utils/handleContactValidation';
+import Loader from 'components/core/Loader';
 
-function ContactForm({ onEmailSend }) {
+function ContactForm() {
   const { t } = useTranslation();
+  const [state, handleSubmit] = useForm(process.env.REACT_APP_FORM_SPREE_KEY);
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -15,32 +16,26 @@ function ContactForm({ onEmailSend }) {
     name: '', email: '', message: '',
   });
 
-  const handleSubmit = (event) => {
+  const onSubmit = (event) => {
     event.preventDefault();
 
     if (handleContactValidation(name, email, message, setContactFormErrors)) {
-      init('user_FokKGGu0nYvixQZZQCMYz');
-
       const params = {
         from_name: name,
         email,
         message,
       };
 
-      emailjs.send('service_e2649gi', 'template_8vmolpe', params)
-        .then(() => {
-          setName('');
-          setEmail('');
-          setMessage('');
-          onEmailSend(true);
-        }, () => {
-          // console.log('FAILED...', error);
-        });
+      handleSubmit(params);
     }
   };
 
+  if (state.succeeded) {
+    return <Styled.Success>Thanks for contacting me :).</Styled.Success>;
+  }
+
   return (
-    <Styled.Form onSubmit={handleSubmit}>
+    <Styled.Form onSubmit={onSubmit}>
       <Styled.InputGroup error={contactFormErrors.name}>
         <input
           type="text"
@@ -73,8 +68,9 @@ function ContactForm({ onEmailSend }) {
           {contactFormErrors.message}
         </span>
       </Styled.InputGroup>
-      <Styled.Submit type="submit">
-        {t('contact.fields.submit')}
+      <Styled.Submit type="submit" disabled={state.submitting}>
+        {state.submitting && <Styled.Loader size={20} />}
+        <span>{t('contact.fields.submit')}</span>
       </Styled.Submit>
     </Styled.Form>
   );
@@ -84,26 +80,34 @@ const Styled = {
   Form: styled.form`
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 1em;
-    row-gap: 1em;
-    width: 50vw;
     max-width: 40em;
 
     & input, textarea {
-      padding: 0.5em;
+      padding: 0.5em 0;
       font-family: Rubik;
-      border-radius: 4px;
-      box-shadow: 1px 1px 1px ${(props) => props.theme.colors.darkGray};
+      border-radius: 0;
       font-size: 1em;
       border: 0;
-      width: 100%;
+      border-bottom: 1px solid ${({ theme }) => theme.colors.gray};
+      background: transparent;
+      color: white;
+      outline: none;
+      transition: 300ms border-bottom-color ease-out;
+
+      &:focus {
+        border-bottom-color: ${({ theme }) => theme.colors.white};
+      }
+
+      @media (min-width: ${({ theme }) => theme.breakpoints.laptop}px) {
+        max-width: 30em;
+        width: 30em;
+      }
     }
 
     & textarea {
-      min-width: 100%;
-      max-width: 40em;
-      min-height: 10em;
+      resize: vertical;
+      height: 1.4em;
+      min-height: 1.4em;
       max-height: 15em;
     }
   `,
@@ -119,30 +123,55 @@ const Styled = {
     }
 
     & input, textarea {
-      ${({ error, theme }) => error !== '' && `border: 1px solid ${theme.colors.error}`}
+      ${({ error, theme }) => error !== '' && `border-bottom: 1px solid ${theme.colors.error}`}
     }
   `,
   Submit: styled.button`
-    background: ${(props) => props.theme.colors.white};
+    background: transparent;
     border: 0;
-    color: ${(props) => props.theme.colors.black};
+    color: ${(props) => props.theme.colors.gray};
     border-radius: 4px;
     font-size: 1em;
-    cursor: pointer;
     padding: 1em 2em;
     margin-top: 1em;
     font-family: Rubik;
-    box-shadow: 2px 2px 1px ${(props) => props.theme.colors.darkGray};
-    transition: 100ms;
+    box-shadow: 0.3px 0.3px 0.3px ${(props) => props.theme.colors.darkGray};
+    border: 1px solid ${(props) => props.theme.colors.darkGray};
+    transition: all 300ms;
+    width: 100%;
+    position: relative;
+    
+    &:disabled { 
+      & > span {
+        opacity: 0;
+      }
+    }
 
-    &:hover {
-      box-shadow: 0px 0px 3px ${(props) => props.theme.colors.black}, 3px 3px 2px ${(props) => props.theme.colors.lightBlueSecondary};
+    &:not(&:disabled) {
+      cursor: pointer;
+
+      &:hover {
+        color: white;
+        border-color: ${(props) => props.theme.colors.gray};
+        box-shadow: 0.3px 0.3px 0.3px ${(props) => props.theme.colors.gray};
+      }
+    }
+
+    @media (min-width: ${(props) => props.theme.breakpoints.laptop}px) {
+      width: fit-content;
     }
   `,
-};
-
-ContactForm.propTypes = {
-  onEmailSend: PropTypes.func.isRequired,
+  Loader: styled(Loader)`
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  `,
+  Success: styled.div`
+    align-self: flex-start;
+    margin-top: 1rem;
+    font-size: 1.5em;
+  `,
 };
 
 export default ContactForm;

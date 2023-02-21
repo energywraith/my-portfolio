@@ -44,11 +44,13 @@ Header.propTypes = {
 const Styled = {
   Header: styled.h3`
     margin: 0;
-    font-weight: 400;
     width: fit-content;
     color: ${(props) => props.theme.colors.white};
     font-size: 3em;
     margin-top: 1em;
+    font-family: "Poppins";
+    font-weight: 500;
+    height: 1.6em;
 
     .Typewriter__cursor {
       position: absolute;
@@ -76,7 +78,6 @@ const Styled = {
     }
 
     @media (max-width: ${(props) => props.theme.breakpoints.tablet}px) {
-      padding-left: 1rem;
       font-size: 1.8em;
     }
   `,
