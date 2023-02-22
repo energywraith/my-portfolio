@@ -30,7 +30,7 @@
     "contact": {
       "nav": "Contact",
       "header": "Contact me",
-      "description": "Do you think we can make something cool together? Feel free to send me a message, and we will try to make it work! I will try to answer your message ASAP.",
+      "description": "Do you think we can make something cool together? Feel free to send me a message, and we will try to make it work! I will answer your message ASAP.",
       "fields": {
         "name": "Your Name*",
         "email": "Your Email Address*",

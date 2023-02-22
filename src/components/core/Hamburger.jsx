@@ -34,7 +34,7 @@ const Styled = {
       width: 100%;
       height: 3px;
       position: absolute;
-      background: ${({ theme }) => theme.colors.white};
+      background: ${({ theme }) => theme.colors.secondary};
       border-radius: 3px;
       transition: 150ms;
       transition-delay: 0ms;

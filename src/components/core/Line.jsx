@@ -7,7 +7,7 @@ function Line() {
 
 const Styled = {
   Line: styled.hr`
-    border: 1px solid rgba(${({ theme }) => theme.colors.white}, 0.5);
+    border: 1px solid ${({ theme }) => theme.colors.lightGray};
     height: 10vh;
   `,
 };

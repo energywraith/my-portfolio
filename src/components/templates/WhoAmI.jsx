@@ -45,6 +45,7 @@ const Styled = {
     align-items: center;
     grid-column: 1/3;
     font-size: 3.5em;
+    color: ${({ theme }) => theme.colors.secondary};
 
     @media (min-width: ${(props) => props.theme.breakpoints.tablet}px) {
       padding: 0 0 0 2rem;

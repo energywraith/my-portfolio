@@ -81,6 +81,7 @@ const Styled = {
     display: flex;
     flex-direction: column;
     max-width: 40em;
+    height: 100%;
 
     & input, textarea {
       padding: 0.5em 0;
@@ -132,17 +133,17 @@ const Styled = {
   Submit: styled.button`
     background: transparent;
     border: 0;
-    color: ${(props) => props.theme.colors.gray};
+    color: ${(props) => props.theme.colors.lightSecondary};
     border-radius: 4px;
     font-size: 1em;
     padding: 1em 2em;
-    margin-top: 1em;
     font-family: Rubik;
     box-shadow: 0.3px 0.3px 0.3px ${(props) => props.theme.colors.darkGray};
     border: 1px solid ${(props) => props.theme.colors.darkGray};
     transition: all 300ms;
     width: 100%;
     position: relative;
+    margin-top: 1rem;
     
     &:disabled { 
       & > span {

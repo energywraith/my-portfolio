@@ -59,6 +59,7 @@ const Styled = {
         line-height: 1.4em;
         text-transform: uppercase;
         height: 1.2em;
+        margin-top: 0.6rem;
       }
     }
 
@@ -67,9 +68,9 @@ const Styled = {
       font-size: 1em;
       font-weight: 400;
       max-width: 80ch;
-      color: ${(props) => props.theme.colors.lightGray};
+      color: ${(props) => props.theme.colors.lightSecondary};
       line-height: 1.8em;
-      margin-top: 1rem;
+      margin-top: 0.5rem;
     }
 
     & form {
@@ -88,7 +89,7 @@ const Styled = {
   ImageWrapper: styled.div`
     grid-row: 1/4;
     grid-column: 1;
-    max-width: 22rem;
+    max-width: 20rem;
     z-index: ${(props) => props.theme.layers.background};
     display: none;
     
