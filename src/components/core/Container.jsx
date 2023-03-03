@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import noop from 'utils/noop';
 
-function Container({ className, children }) {
-  return <Styled.Container className={className}>{children}</Styled.Container>;
+function Container({ className, children, onClick }) {
+  return <Styled.Container className={className} onClick={onClick}>{children}</Styled.Container>;
 }
 
 const Styled = {
@@ -22,10 +23,12 @@ const Styled = {
 Container.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 Container.defaultProps = {
   className: '',
+  onClick: noop,
 };
 
 export default Container;

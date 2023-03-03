@@ -9,6 +9,7 @@ export default {
       main: '#000000',
       secondary: '#ffffff',
       lightSecondary: 'rgba(255, 255, 255, 0.7)',
+      lighterSecondary: 'rgba(255, 255, 255, 0.1)',
       // accent: 'TODO',
       black: '#000000',
       white: '#FFFFFF',

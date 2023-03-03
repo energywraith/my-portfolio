@@ -19,13 +19,40 @@
         "puppeteer": "Puppeteer",
         "react": "React",
         "reactRedux": "React Redux",
-        "styledComponents": "Styled Components"
+        "styledComponents": "Styled Components",
+        "typescript": "TypeScript",
+        "vue": "Vue 3",
+        "nuxt": "Nuxt 3",
+        "pinia": "Pinia"
       },
-      "vansScrapper": "Vans Scrapper Website",
-      "vansScrapperDescription": "The Vans Scrapper Website is a site I created to make my search for skateboarding shoes easier. On the original site some features don't work such as filtering, sometimes even the shoes show up although they are not available. The data is updated daily at midnight with the data collected with the scrapper written in puppeteer.",
-      "geniusMusic": "Genius music app",
-      "geniusMusicDescription": "App based on Genius API, where you can search for songs, based on lyrics or their name. You can also look there for your favourite artists or albums. Besides that there are random songs generated on home page, so you might discover your new favourite one :).",
-      "herokuNote": "Note: First load of live preview may take a while, because page is hosted on Heroku, which goes idle when there is a small traffic."
+      "view": "View ",
+      "hide": "Hide ",
+      "details": "Details",
+      "vansScrapper": {
+        "name": "Vans Scrapper Website",
+        "description": "VSW is complementary to the one of the first scrappers I have ever done. Its an app that scrapes the shoes from the Vans page and displays them. The official Vans website is broken in several ways, which makes using it unpleasant.\n\nMy first idea was to make a scrapper in Puppeteer and then send updates on items to my Discord server using Discord webhooks, but it was impractical as I would have to check the items every day to keep track of them, which I dont have time for. So I have created a website where I connect to the API I created earlier and display the Vans shoes with some filters, so I can quickly check for available items every time",
+        "features": [
+          "Vans shoes are displayed in a simple way",
+          "You can save shoes for later using Favorite feature",
+          "Database is being updated every midnight"
+        ]
+      },
+      "winamp": {
+        "name": "Webinamp",
+        "description": "Remember the old good times when you used to listen to the legendary songs on your windows 95 using winamp? Well those times arent back, but we can pretend that this is the case thank to WEB WINAMP 9999. You can use winamp anytime and anywhere, all you need is a web browser and a little bit of internet connection 😳.\n\nDuring the development of the application, I noticed that the express on the backend actually just complicates the code of my application. The backend is very simple, its only task at the moment is to download songs using Ytdl, which is impossible on the client side.\n\nKnowing a bit about the React ecosystem, I started to look into whether there might be some interesting Next counterpart for Vue. And here came Nuxt 3, which delighted me with its simplicity, as well as the amount of facilitation it serves. So I decided to move Winamp from Express to Nuxt!",
+        "features": [
+          "You can play any youtube music in Winamp player",
+          "You can create playlist and its stored in browser cache"
+        ]
+      },
+      "geniusMusic": {
+        "name": "Genius music app",
+        "description": "App based on Genius API, where you can search for songs, based on lyrics or their name. You can also look there for your favourite artists or albums. Besides that there are random songs generated on home page, so you might discover your new favourite one :).",
+        "features": [
+          "Huge song/playlist/artists database thank to Genius API",
+          "Contains quick links to streaming pages like youtube/soundcloud/spotify"
+        ]
+      }
     },
     "contact": {
       "nav": "Contact",

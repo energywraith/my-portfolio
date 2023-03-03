@@ -6,7 +6,7 @@ import Banner from 'components/templates/sections/Banner';
 import Contact from 'components/templates/sections/Contact';
 import Footer from 'components/templates/sections/Footer';
 import Section from 'components/core/Section';
-import MouseTrail from 'components/core/MouseTrail';
+// import MouseTrail from 'components/core/MouseTrail';
 
 import Styled from 'theme.style';
 import GlobalStyle from './GlobalStyles';
@@ -16,7 +16,7 @@ function App() {
   return (
     <ThemeProvider theme={Styled.theme}>
       <GlobalStyle />
-      <MouseTrail />
+      {/* <MouseTrail /> */}
 
       <Section id="Home">
         <Banner />

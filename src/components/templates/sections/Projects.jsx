@@ -16,15 +16,17 @@ function Projects() {
     <Styled.Projects>
       <InView triggerOnce>
         {({ inView, ref }) => (
-          <Container>
-            <Header
-              inView={inView}
-              ref={ref}
-            >
-              {t('projects.header')}
-            </Header>
+          <>
+            <Container>
+              <Header
+                inView={inView}
+                ref={ref}
+              >
+                {t('projects.header')}
+              </Header>
+            </Container>
             <ProjectsList inView={inView} ref={ref} />
-          </Container>
+          </>
         )}
       </InView>
     </Styled.Projects>
