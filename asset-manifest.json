@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.564e1c23.css",
-    "main.js": "/static/js/main.80fc5096.js",
+    "main.js": "/static/js/main.196b962b.js",
     "static/media/winamp.webp": "/static/media/winamp.3b65c4ccdcec52089d23.webp",
     "static/media/genius.webp": "/static/media/genius.b7cfbb96904196c57e60.webp",
     "static/media/saintjulianxv.png": "/static/media/saintjulianxv.b429f8516def857d87f8.png",
@@ -17,10 +17,10 @@
     "index.html": "/index.html",
     "static/media/linkedin.svg": "/static/media/linkedin.1633a96222d704c5ee5222386dd242bd.svg",
     "main.564e1c23.css.map": "/static/css/main.564e1c23.css.map",
-    "main.80fc5096.js.map": "/static/js/main.80fc5096.js.map"
+    "main.196b962b.js.map": "/static/js/main.196b962b.js.map"
   },
   "entrypoints": [
     "static/css/main.564e1c23.css",
-    "static/js/main.80fc5096.js"
+    "static/js/main.196b962b.js"
   ]
 }
