@@ -1,8 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.564e1c23.css",
-    "main.js": "/static/js/main.f4d11fad.js",
+    "main.js": "/static/js/main.80fc5096.js",
+    "static/media/winamp.webp": "/static/media/winamp.3b65c4ccdcec52089d23.webp",
+    "static/media/genius.webp": "/static/media/genius.b7cfbb96904196c57e60.webp",
     "static/media/saintjulianxv.png": "/static/media/saintjulianxv.b429f8516def857d87f8.png",
+    "static/media/vans.webp": "/static/media/vans.629867e859a04f2de95e.webp",
     "static/media/mac-old-school.jpg": "/static/media/mac-old-school.703f02c15bade821e024.jpg",
     "static/media/Poppins-Regular.ttf": "/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/Poppins-Medium.ttf": "/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
@@ -14,10 +17,10 @@
     "index.html": "/index.html",
     "static/media/linkedin.svg": "/static/media/linkedin.1633a96222d704c5ee5222386dd242bd.svg",
     "main.564e1c23.css.map": "/static/css/main.564e1c23.css.map",
-    "main.f4d11fad.js.map": "/static/js/main.f4d11fad.js.map"
+    "main.80fc5096.js.map": "/static/js/main.80fc5096.js.map"
   },
   "entrypoints": [
     "static/css/main.564e1c23.css",
-    "static/js/main.f4d11fad.js"
+    "static/js/main.80fc5096.js"
   ]
 }
