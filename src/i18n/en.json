@@ -74,10 +74,7 @@
         "contactMe": "Get in touch with me"
       },
       "explore": {
-        "header": "EXPLORE MY WORK",
-        "project1": "Job application tracker",
-        "project3": "Spotifi",
-        "project2": "Winamp but in your browser"
+        "header": "EXPLORE MY WORK"
       },
       "findMe": {
         "header": "WHERE YOU CAN FIND ME",
