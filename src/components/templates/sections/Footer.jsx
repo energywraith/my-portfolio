@@ -46,7 +46,7 @@ function Footer() {
         </Styled.Lists>
         <Styled.Copyright>
           {t('footer.copyright', { year: new Date().getFullYear(), name: t('name') })}
-          <Styled.NoWrap style={{ whiteSpace: 'nowrap' }}>{t('footer.madeWithLove')}</Styled.NoWrap>
+          <Styled.NoWrap>{t('footer.madeWithLove')}</Styled.NoWrap>
         </Styled.Copyright>
       </Styled.Container>
     </Styled.Footer>
