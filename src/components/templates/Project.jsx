@@ -54,12 +54,10 @@ const Styled = {
     background: #010101cb;
     overflow: hidden;
 
-    * {
-      transition: all 300ms;
-    }
 
-    & > div {
+    & > div {      
       ${ProjectHeaderStyled.Name}, ${ProjectHeaderStyled.Technologies} {
+        transition: transform 300ms;
         transition-delay: 100ms;
         transform: translateX(0);
         opacity: 0.7;
@@ -90,6 +88,7 @@ const Styled = {
       }
 
       ${StyledImage} {
+        transition: transform 600ms;
         transform: translateY(-50%) translateX(-400px);
       }
     }
