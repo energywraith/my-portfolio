@@ -12,7 +12,7 @@
       "nav": "Projects",
       "header": "See my work",
       "livePreview": "Live Preview",
-      "github": "Github",
+      "github": "Source code",
       "technologies": {
         "express": "Express",
         "mongoDb": "MongoDB",

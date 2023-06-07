@@ -27,7 +27,6 @@ function ProjectHeader({
         </Styled.Expand>
       </Styled.Content>
     </Styled.Header>
-
   );
 }
 
@@ -110,3 +109,5 @@ ProjectHeader.propTypes = {
 };
 
 export default ProjectHeader;
+
+export { Styled };

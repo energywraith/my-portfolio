@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Animations from 'utils/Animations';
 
-import ProjectHeader from 'components/templates/ProjectHeader';
-import ProjectContent from './ProjectContent';
+import ProjectHeader, { Styled as ProjectHeaderStyled } from 'components/templates/ProjectHeader';
+import ProjectContent, { linksShape } from 'components/templates/ProjectContent';
 
 function Project({
-  id, name, description, features, technologies, image, isExpanded, onClick,
+  id, name, description, features, technologies, links, image, isExpanded, onClick,
 }) {
   return (
     <Styled.Project className={isExpanded ? 'expanded' : ''}>
@@ -19,11 +19,30 @@ function Project({
       />
       <Styled.Image src={image} alt={name} />
       {isExpanded && (
-        <ProjectContent overview={description} features={features} />
+        <ProjectContent overview={description} features={features} links={links} />
       )}
     </Styled.Project>
   );
 }
+
+const StyledImage = styled.img`
+  position: absolute;
+  height: 100%;
+  object-fit: cover;
+  right: -400px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -2;
+  transition: transform 600ms;
+  box-shadow: 0px 0px 3px #404040;
+  width: 100%;
+  filter: brightness(0.2);
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.laptop}px) {
+    width: 400px;
+    filter: unset;
+  }
+`;
 
 const Styled = {
   Project: styled.li`
@@ -40,7 +59,7 @@ const Styled = {
     }
 
     & > div {
-      h4, ul {
+      ${ProjectHeaderStyled.Name}, ${ProjectHeaderStyled.Technologies} {
         transition-delay: 100ms;
         transform: translateX(0);
         opacity: 0.7;
@@ -52,7 +71,7 @@ const Styled = {
       background: black;
       
       & > div {
-        h4, ul {
+        ${ProjectHeaderStyled.Name}, ${ProjectHeaderStyled.Technologies} {
           opacity: 1;
 
           @media (min-width: ${({ theme }) => theme.breakpoints.tablet}px) {
@@ -70,7 +89,7 @@ const Styled = {
         border-radius: 25px;
       }
 
-      img {
+      ${StyledImage} {
         transform: translateY(-50%) translateX(-400px);
       }
     }
@@ -79,24 +98,7 @@ const Styled = {
       border-bottom: 1px solid #282727;
     }
   `,
-  Image: styled.img`
-    position: absolute;
-    height: 100%;
-    object-fit: cover;
-    right: -400px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: -2;
-    transition: transform 600ms;
-    box-shadow: 0px 0px 3px #404040;
-    width: 100%;
-    filter: brightness(0.2);
-
-    @media (min-width: ${({ theme }) => theme.breakpoints.laptop}px) {
-      width: 400px;
-      filter: unset;
-    }
-  `,
+  Image: StyledImage,
 };
 
 Project.propTypes = {
@@ -105,6 +107,7 @@ Project.propTypes = {
   description: PropTypes.string.isRequired,
   features: PropTypes.arrayOf(PropTypes.string).isRequired,
   technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
+  links: linksShape.isRequired,
   image: PropTypes.string.isRequired,
   isExpanded: PropTypes.bool.isRequired,
   onClick: PropTypes.func.isRequired,

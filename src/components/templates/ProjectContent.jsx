@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Accordion from 'components/core/Accordion';
 import Container from 'components/core/Container';
+import ProjectLink, { linkShape } from 'components/templates/ProjectLink';
 import Animations from 'utils/Animations';
 
-function ProjectContent({ overview, features }) {
+function ProjectContent({ overview, features, links }) {
   return (
     <Accordion>
       <Styled.Content>
@@ -24,9 +25,13 @@ function ProjectContent({ overview, features }) {
             ))}
           </ul>
         </Styled.Features>
+        <Styled.Links>
+          {links.map(({ href, content, type }) => (
+            <ProjectLink href={href} content={content} type={type} />
+          ))}
+        </Styled.Links>
       </Styled.Content>
     </Accordion>
-
   );
 }
 
@@ -66,11 +71,13 @@ const Styled = {
   `,
   Features: styled.div`
     margin-top: 2rem;
+    padding-bottom: 2rem;
 
     & > ul {
       padding: 0;
       margin: 0;
       list-style: circle;
+      transform: translateX(40px);
       
       & > li {
         opacity: 0;
@@ -84,11 +91,27 @@ const Styled = {
       }
     }
   `,
+  Links: styled.ul`
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    column-gap: 1rem;
+
+    & li a {
+      
+    }
+  `,
 };
+
+const linksShape = PropTypes.arrayOf(linkShape);
 
 ProjectContent.propTypes = {
   overview: PropTypes.string.isRequired,
   features: PropTypes.arrayOf(PropTypes.string).isRequired,
+  links: linksShape.isRequired,
 };
 
 export default ProjectContent;
+
+export { linksShape };

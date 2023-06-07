@@ -7,7 +7,7 @@ import winamp from 'assets/winamp.webp';
 import genius from 'assets/genius.webp';
 import vans from 'assets/vans.webp';
 
-const projects = [{
+const getProjects = (githubContent, previewContent) => [{
   id: '1',
   intlName: 'projects.vansScrapper',
   technologies: [
@@ -19,7 +19,9 @@ const projects = [{
     'projects.technologies.puppeteer',
   ],
   image: vans,
-  github: 'https://github.com/energywraith/vans-scrapper-website',
+  links: [
+    { href: 'https://github.com/energywraith/vans-scrapper-website', content: githubContent, type: 'github' },
+  ],
 }, {
   id: '2',
   intlName: 'projects.winamp',
@@ -29,7 +31,10 @@ const projects = [{
     'projects.technologies.pinia',
   ],
   image: winamp,
-  github: 'https://github.com/energywraith/vans-scrapper-website',
+  links: [
+    { href: 'https://github.com/energywraith/winamp', content: githubContent, type: 'github' },
+    { href: 'https://winamp.vercel.app', content: previewContent, type: 'preview' },
+  ],
 }, {
   id: '3',
   intlName: 'projects.geniusMusic',
@@ -39,11 +44,15 @@ const projects = [{
     'projects.technologies.express',
   ],
   image: genius,
-  github: 'https://github.com/energywraith/vans-scrapper-website',
+  links: [
+    { href: 'https://github.com/energywraith/genius-music-app', content: githubContent, type: 'github' },
+  ],
 }];
 
 const ProjectsList = React.forwardRef(({ inView }, ref) => {
   const { t } = useTranslation();
+
+  const projects = getProjects(t('projects.github'), t('projects.livePreview'));
 
   const [expandedProject, setExpandedProject] = useState(null);
 
@@ -67,11 +76,8 @@ const ProjectsList = React.forwardRef(({ inView }, ref) => {
           features={t(`${project.intlName}.features`, { returnObjects: true })}
           technologies={project.technologies.map((technology) => t(technology))}
           note={t(project.note)}
-          links={[
-            { href: project.preview, name: t('projects.livePreview') },
-            { href: project.github, name: t('projects.github') },
-          ]}
-          image={project.image || 'https://portfolio-behance-final.vercel.app/images/cover-v2.5171a263ef19df011b4ae51b9f346b62.webp'}
+          links={project.links}
+          image={project.image}
           isExpanded={expandedProject === project.id}
           onClick={onProjectExpand}
         />
