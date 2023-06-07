@@ -1,12 +1,14 @@
 import gsap from 'gsap';
 import { useEffect } from 'react';
 
-const svgns = 'http://www.w3.org/2000/svg';
-const ease = 0.6;
-const total = 100;
-const strokeWidth = 8;
+const attributes = {
+  svgns: 'http://www.w3.org/2000/svg',
+  ease: 0.6,
+  total: 100,
+  strokeWidth: 8,
+};
 
-const getAlpha = (i) => (total - i) / total / 1.5;
+const getAlpha = (i) => (attributes.total - i) / attributes.total / 1.5;
 const getColor = (i) => `rgb(255, ${(i * 50) / 100}, ${(i * 255) / 100})`;
 
 gsap.defaults({ ease: 'none' });
@@ -16,13 +18,13 @@ const initializeMouseTrail = (root, pointer) => {
 
   // eslint-disable-next-line
   function createLine(leader, i) {
-    const line = document.createElementNS(svgns, 'line');
+    const line = document.createElementNS(attributes.svgns, 'line');
     root.appendChild(line);
 
     gsap.set(line, {
       x: pointer.x,
       y: pointer.y,
-      strokeWidth,
+      strokeWidth: attributes.strokeWidth,
       alpha: getAlpha(i),
       stroke: getColor(i),
     });
@@ -37,7 +39,7 @@ const initializeMouseTrail = (root, pointer) => {
           const posX = gsap.getProperty(line, 'x');
           const leaderX = gsap.getProperty(leader, 'x');
 
-          const x = posX + (leaderX - posX) * ease;
+          const x = posX + (leaderX - posX) * attributes.ease;
 
           line.setAttribute('x2', leaderX - x);
           return x;
@@ -46,7 +48,7 @@ const initializeMouseTrail = (root, pointer) => {
           const posY = gsap.getProperty(line, 'y');
           const leaderY = gsap.getProperty(leader, 'y');
 
-          const y = posY + (leaderY - posY) * ease;
+          const y = posY + (leaderY - posY) * attributes.ease;
 
           line.setAttribute('y2', leaderY - y);
           return y;
@@ -57,7 +59,7 @@ const initializeMouseTrail = (root, pointer) => {
     return line;
   }
 
-  [...new Array(total)].forEach((_element, index) => {
+  [...new Array(attributes.total)].forEach((_element, index) => {
     leader = createLine(leader, index);
   });
 };
