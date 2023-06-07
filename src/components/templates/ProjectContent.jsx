@@ -27,7 +27,7 @@ function ProjectContent({ overview, features, links }) {
         </Styled.Features>
         <Styled.Links>
           {links.map(({ href, content, type }) => (
-            <ProjectLink href={href} content={content} type={type} />
+            <ProjectLink key={type} href={href} content={content} type={type} />
           ))}
         </Styled.Links>
       </Styled.Content>
@@ -104,7 +104,7 @@ const Styled = {
   `,
 };
 
-const linksShape = PropTypes.arrayOf(linkShape);
+const linksShape = PropTypes.arrayOf(PropTypes.shape(linkShape));
 
 ProjectContent.propTypes = {
   overview: PropTypes.string.isRequired,
