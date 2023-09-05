@@ -1,7 +1,7 @@
-import Line from 'components/core/Line';
 import React from 'react';
-import styled from 'styled-components';
 import { Link } from 'react-scroll';
+import styled from 'styled-components';
+import Line from 'components/core/Line';
 import LinkedInSVG from 'assets/linkedin.svg';
 import GithubSVG from 'assets/github.svg';
 import MailSVG from 'assets/mail.svg';

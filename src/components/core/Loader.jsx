@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Animations from 'utils/Animations';
 import PropTypes from 'prop-types';
+import Animations from 'utils/Animations';
 
 function Loader({ size, className }) {
   return (

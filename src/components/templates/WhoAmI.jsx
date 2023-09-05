@@ -1,8 +1,8 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
-import useMisspell from 'hooks/useMisspell';
-import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
+import styled from 'styled-components';
+import useMisspell from 'hooks/useMisspell';
 
 function WhoAmI() {
   const { t } = useTranslation();

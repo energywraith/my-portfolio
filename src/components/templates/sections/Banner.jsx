@@ -2,9 +2,9 @@ import React, { useState, useMemo } from 'react';
 import styled, { css } from 'styled-components';
 import { Link as ScrollLink } from 'react-scroll';
 import { useTranslation } from 'react-i18next';
-import Container from 'components/core/Container';
 import { InView } from 'react-intersection-observer';
 
+import Container from 'components/core/Container';
 import backgroundImage from 'assets/splash.webp';
 import arrowDown from 'assets/arrow-down.svg';
 import Nav from 'components/templates/Nav';

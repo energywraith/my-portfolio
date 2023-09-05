@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import Project from 'components/templates/Project';
 import styled, { css } from 'styled-components';
 import { useTranslation } from 'react-i18next';
+import Project from 'components/templates/Project';
 import winamp from 'assets/winamp.webp';
 import genius from 'assets/genius.webp';
 import vans from 'assets/vans.webp';

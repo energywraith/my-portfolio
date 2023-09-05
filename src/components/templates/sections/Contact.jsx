@@ -1,12 +1,11 @@
 import React from 'react';
-import ContactPng from 'assets/saintjulianxv.png';
 import styled from 'styled-components';
-import ContactForm from 'components/templates/ContactForm';
 import { useTranslation } from 'react-i18next';
-import Container from 'components/core/Container';
-
 import { InView } from 'react-intersection-observer';
+import Container from 'components/core/Container';
+import ContactForm from 'components/templates/ContactForm';
 import Header from 'components/core/Header';
+import ContactPng from 'assets/saintjulianxv.png';
 
 function Contact() {
   const { t } = useTranslation();

@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
-import useMouseTrail from 'hooks/useMouseTrail';
 import styled from 'styled-components';
+import useMouseTrail from 'hooks/useMouseTrail';
 
 function MouseTrail() {
   const containerRef = useRef(null);

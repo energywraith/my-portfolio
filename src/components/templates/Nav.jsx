@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import styled, { css } from 'styled-components';
+import { useTranslation } from 'react-i18next';
 // import Brand from 'components/core/Brand';
 import Hamburger from 'components/core/Hamburger';
 import Animations from 'utils/Animations';
-import { useTranslation } from 'react-i18next';
 
 function Nav() {
   const { t } = useTranslation();

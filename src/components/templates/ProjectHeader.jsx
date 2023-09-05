@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import Container from 'components/core/Container';
 import { useTranslation } from 'react-i18next';
+import Container from 'components/core/Container';
 
 function ProjectHeader({
   name, technologies, isExpanded, onClick,
