@@ -5,49 +5,67 @@ import { useTranslation } from 'react-i18next';
 import Project from 'components/templates/Project';
 import winamp from 'assets/winamp.webp';
 import genius from 'assets/genius.webp';
-import vans from 'assets/vans.webp';
+// import vans from 'assets/vans.webp';
+import emotion from 'assets/emotion.webp';
 
-const getProjects = (githubContent, previewContent) => [{
-  id: '1',
-  intlName: 'projects.vansScrapper',
-  technologies: [
-    'projects.technologies.react',
-    'projects.technologies.reactRedux',
-    'projects.technologies.styledComponents',
-    'projects.technologies.express',
-    'projects.technologies.mongoDb',
-    'projects.technologies.puppeteer',
-  ],
-  image: vans,
-  links: [
-    { href: 'https://github.com/energywraith/vans-scrapper-website', content: githubContent, type: 'github' },
-  ],
-}, {
-  id: '2',
-  intlName: 'projects.winamp',
-  technologies: [
-    'projects.technologies.vue',
-    'projects.technologies.nuxt',
-    'projects.technologies.pinia',
-  ],
-  image: winamp,
-  links: [
-    { href: 'https://github.com/energywraith/winamp', content: githubContent, type: 'github' },
-    { href: 'https://winamp.vercel.app', content: previewContent, type: 'preview' },
-  ],
-}, {
-  id: '3',
-  intlName: 'projects.geniusMusic',
-  technologies: [
-    'projects.technologies.react',
-    'projects.technologies.styledComponents',
-    'projects.technologies.express',
-  ],
-  image: genius,
-  links: [
-    { href: 'https://github.com/energywraith/genius-music-app', content: githubContent, type: 'github' },
-  ],
-}];
+const getProjects = (githubContent, previewContent) => [
+//   {
+//   id: '1',
+//   intlName: 'projects.vansScrapper',
+//   technologies: [
+//     'projects.technologies.react',
+//     'projects.technologies.reactRedux',
+//     'projects.technologies.styledComponents',
+//     'projects.technologies.express',
+//     'projects.technologies.mongoDb',
+//     'projects.technologies.puppeteer',
+//   ],
+//   image: vans,
+//   links: [
+//     { href: 'https://github.com/energywraith/vans-scrapper-website', content: githubContent, type: 'github' },
+//   ],
+// },
+  {
+    id: '4',
+    intlName: 'projects.emotion',
+    technologies: [
+      'projects.technologies.typescript',
+      'projects.technologies.next',
+      'projects.technologies.react',
+      'projects.technologies.sass',
+    ],
+    image: emotion,
+    links: [
+      { href: 'https://emotion.miami/', content: previewContent, type: 'preview' },
+    ],
+  },
+  {
+    id: '2',
+    intlName: 'projects.winamp',
+    technologies: [
+      'projects.technologies.typescript',
+      'projects.technologies.vue',
+      'projects.technologies.nuxt',
+      'projects.technologies.pinia',
+    ],
+    image: winamp,
+    links: [
+      { href: 'https://github.com/energywraith/winamp', content: githubContent, type: 'github' },
+      { href: 'https://winamp.vercel.app', content: previewContent, type: 'preview' },
+    ],
+  }, {
+    id: '3',
+    intlName: 'projects.geniusMusic',
+    technologies: [
+      'projects.technologies.react',
+      'projects.technologies.styledComponents',
+      'projects.technologies.express',
+    ],
+    image: genius,
+    links: [
+      { href: 'https://github.com/energywraith/genius-music-app', content: githubContent, type: 'github' },
+    ],
+  }];
 
 const ProjectsList = React.forwardRef(({ inView }, ref) => {
   const { t } = useTranslation();

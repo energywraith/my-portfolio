@@ -23,7 +23,9 @@
         "typescript": "TypeScript",
         "vue": "Vue 3",
         "nuxt": "Nuxt 3",
-        "pinia": "Pinia"
+        "next": "Next",
+        "pinia": "Pinia",
+        "sass": "Sass"
       },
       "view": "View ",
       "hide": "Hide ",
@@ -51,6 +53,17 @@
         "features": [
           "Huge song/playlist/artists database thank to Genius API",
           "Contains quick links to streaming pages like youtube/soundcloud/spotify"
+        ]
+      },
+      "emotion": {
+        "name": "✨Emotion 98.3",
+        "description": "As a devoted enthusiast of the '80s soundscape, I've poured my heart and soul into crafting an online experience that will transport you back in time. But it doesn't stop there. I'm tirelessly working to expand and enhance the features of this virtual OS, striving to make it not just a trip down memory lane, but an engaging and entertaining journey.\n\nIf you're curious and share my affection for the '80s, I invite you to dive headfirst into this project. It's the one I hold dearest to my heart, and every moment I invest in it is a labor of love.\n\nJoin me in reliving the magic of the '80s through emotion 98.3, and let's make some new memories together.",
+        "features": [
+          "A 80s-inspired interface with retro fonts, vibrant colors, and neon accents.",
+          "Tune in to a virtual '80s radio station with a playlist of classic tracks",
+          "Discover hidden '80s references and Easter eggs throughout the application.",
+          "Continuously adding new features, and content to keep the experience fresh and exciting."
+
         ]
       }
     },
