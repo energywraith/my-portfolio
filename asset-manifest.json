@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.564e1c23.css",
-    "main.js": "/static/js/main.b45115c9.js",
+    "main.js": "/static/js/main.bda11cf0.js",
     "static/media/drugie-zycie-design.jpg": "/static/media/drugie-zycie-design.ac7091e7cbc1e5ad30fc.jpg",
     "static/media/saintjulianxv.png": "/static/media/saintjulianxv.b429f8516def857d87f8.png",
     "static/media/harmonia-design.jpg": "/static/media/harmonia-design.950c4ef13ba300e890da.jpg",
@@ -17,10 +17,10 @@
     "index.html": "/index.html",
     "static/media/linkedin.svg": "/static/media/linkedin.1633a96222d704c5ee5222386dd242bd.svg",
     "main.564e1c23.css.map": "/static/css/main.564e1c23.css.map",
-    "main.b45115c9.js.map": "/static/js/main.b45115c9.js.map"
+    "main.bda11cf0.js.map": "/static/js/main.bda11cf0.js.map"
   },
   "entrypoints": [
     "static/css/main.564e1c23.css",
-    "static/js/main.b45115c9.js"
+    "static/js/main.bda11cf0.js"
   ]
 }
