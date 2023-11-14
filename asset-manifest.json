@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.564e1c23.css",
-    "main.js": "/static/js/main.41442d8d.js",
-    "static/media/winamp.webp": "/static/media/winamp.3b65c4ccdcec52089d23.webp",
-    "static/media/genius.webp": "/static/media/genius.b7cfbb96904196c57e60.webp",
+    "main.js": "/static/js/main.d49ebaa4.js",
+    "static/media/drugie-zycie-design.jpg": "/static/media/drugie-zycie-design.ac7091e7cbc1e5ad30fc.jpg",
     "static/media/saintjulianxv.png": "/static/media/saintjulianxv.b429f8516def857d87f8.png",
-    "static/media/emotion.webp": "/static/media/emotion.08daebdaec8e7d3fd978.webp",
+    "static/media/harmonia-design.jpg": "/static/media/harmonia-design.950c4ef13ba300e890da.jpg",
+    "static/media/shelter-design.jpg": "/static/media/shelter-design.00529148ad15776e97c4.jpg",
     "static/media/mac-old-school.jpg": "/static/media/mac-old-school.703f02c15bade821e024.jpg",
     "static/media/Poppins-Regular.ttf": "/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/Poppins-Medium.ttf": "/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
@@ -15,13 +15,12 @@
     "static/media/arrow-down.svg": "/static/media/arrow-down.f16dde91462ed4e46f57842a6db967d6.svg",
     "static/media/github.svg": "/static/media/github.c5ac6b5f2a95da28e2952c0538d9202c.svg",
     "index.html": "/index.html",
-    "static/media/browser.svg": "/static/media/browser.cd59f9dda28ed8a667a77bd34d358769.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.1633a96222d704c5ee5222386dd242bd.svg",
     "main.564e1c23.css.map": "/static/css/main.564e1c23.css.map",
-    "main.41442d8d.js.map": "/static/js/main.41442d8d.js.map"
+    "main.d49ebaa4.js.map": "/static/js/main.d49ebaa4.js.map"
   },
   "entrypoints": [
     "static/css/main.564e1c23.css",
-    "static/js/main.41442d8d.js"
+    "static/js/main.d49ebaa4.js"
   ]
 }
