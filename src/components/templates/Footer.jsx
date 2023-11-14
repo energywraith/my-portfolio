@@ -28,9 +28,9 @@ function Footer() {
           <List
             header={t('footer.explore.header')}
             elements={[
-              { label: t('projects.vansScrapper.name'), to: 'https://github.com/energywraith/vans-scrapper-website' },
-              { label: t('projects.winamp.name'), to: 'https://github.com/energywraith/winamp' },
-              { label: t('projects.geniusMusic.name'), to: 'https://github.com/energywraith/genius-music-app' },
+              { label: t('projects.emotion.name'), to: 'https://emotion.miami/' },
+              { label: t('projects.winamp.name'), to: 'https://winamp.vercel.app' },
+              { label: t('projects.harmonia.name'), to: 'https://harmonia-orpin.vercel.app/' },
             ]}
             isVertical
           />
