@@ -1,10 +1,11 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
-import Projects from 'components/templates/sections/Projects';
-import Banner from 'components/templates/sections/Banner';
-import Contact from 'components/templates/sections/Contact';
-import Footer from 'components/templates/sections/Footer';
+import Banner from 'components/templates/Banner';
+import Projects from 'components/templates/Projects';
+import Designs from 'components/templates/Designs';
+import Contact from 'components/templates/Contact';
+import Footer from 'components/templates/Footer';
 import Section from 'components/core/Section';
 import MouseTrail from 'components/core/MouseTrail';
 
@@ -23,6 +24,9 @@ function App() {
       </Section>
       <Section id="Projects">
         <Projects />
+      </Section>
+      <Section id="Designs">
+        <Designs />
       </Section>
       <Section id="Contact">
         <Contact />

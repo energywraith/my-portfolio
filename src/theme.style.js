@@ -25,7 +25,7 @@ export default {
     },
     layers: {
       modal: 2,
-      mouseTrail: -1,
+      mouseTrail: 1,
       background: -2,
     },
   },
