@@ -6,7 +6,7 @@ import LinkedInSVG from 'assets/linkedin.svg';
 import GithubSVG from 'assets/github.svg';
 import MailSVG from 'assets/mail.svg';
 
-function BadgesList() {
+function QuickContact() {
   return (
     <Styled.List>
       <Line />
@@ -68,4 +68,4 @@ const Styled = {
   `,
 };
 
-export default BadgesList;
+export default QuickContact;

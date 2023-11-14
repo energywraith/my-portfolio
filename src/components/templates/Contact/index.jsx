@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 import { InView } from 'react-intersection-observer';
 import Container from 'components/core/Container';
-import ContactForm from 'components/templates/ContactForm';
-import Header from 'components/core/Header';
 import ContactPng from 'assets/saintjulianxv.png';
+import Header from 'components/core/Header';
+import ContactForm from './ContactForm';
 
 function Contact() {
   const { t } = useTranslation();
@@ -42,6 +42,7 @@ const Styled = {
     color: ${({ theme }) => theme.colors.white};
     padding-bottom: 4rem;
     min-height: 24rem;
+    margin-top: 2rem;
 
     @media (min-width: ${({ theme }) => theme.breakpoints.tablet}px) {
       grid-template-columns: auto 1fr;

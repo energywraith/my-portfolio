@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import styled, { css } from 'styled-components';
 import { useTranslation } from 'react-i18next';
-// import Brand from 'components/core/Brand';
 import Hamburger from 'components/core/Hamburger';
 import Animations from 'utils/Animations';
 
@@ -26,14 +25,6 @@ function Nav() {
 
   return (
     <Styled.Nav>
-      {/* <Styled.BrandLink
-        to="Home"
-        smooth
-        duration={500}
-        style={{ cursor: 'pointer' }}
-      >
-        <Brand />
-      </Styled.BrandLink> */}
 
       <Styled.NavLinksWrapper>
         <Styled.NavLinks active={isActive}>
@@ -77,13 +68,6 @@ const Styled = {
     & img {
       width: 2em;
       height: 2em;
-    }
-  `,
-  BrandLink: styled(Link)`
-    display: none;
-    
-    @media (min-width: ${(props) => props.theme.breakpoints.tablet}px) {
-      display: block;
     }
   `,
   NavLinksWrapper: styled.div`

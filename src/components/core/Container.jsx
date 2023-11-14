@@ -13,7 +13,7 @@ const Styled = {
     padding-right: 2rem;
 
     @media (min-width: ${(props) => props.theme.breakpoints.tablet}px) {
-      max-width: 1600px;
+      max-width: 1200px;
       margin-left: auto;
       margin-right: auto;
     }

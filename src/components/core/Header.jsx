@@ -47,7 +47,6 @@ const Styled = {
     width: fit-content;
     color: ${(props) => props.theme.colors.white};
     font-size: 3em;
-    margin-top: 1em;
     font-family: "Poppins";
     font-weight: 500;
     height: 1.6em;

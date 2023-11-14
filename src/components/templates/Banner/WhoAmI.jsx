@@ -40,9 +40,6 @@ const Styled = {
     display: flex;
     flex-direction: column;
     row-gap: 0.3em;
-    padding: 1em 1em 2em 1em;
-    text-align: center;
-    align-items: center;
     grid-column: 1/3;
     font-size: 3.5em;
     color: ${({ theme }) => theme.colors.secondary};
@@ -50,7 +47,6 @@ const Styled = {
     @media (min-width: ${(props) => props.theme.breakpoints.tablet}px) {
       padding: 0 0 0 2rem;
       text-align: left;
-      align-items: flex-start;
       grid-column: 1;
       font-size: 4em;
     }
@@ -59,6 +55,7 @@ const Styled = {
     font-size: 0.8em;
     font-family: 'Poppins';
     margin: 0;
+    line-height: 1.2em;
     
     @media (min-width: ${(props) => props.theme.breakpoints.tablet}px) {
       line-height: 1.2em;
@@ -70,6 +67,12 @@ const Styled = {
     padding: 0;
     font-size: 0.3em;
     letter-spacing: 1px;
+    max-width: 80%;
+    line-height: 1.5em;
+
+    @media (min-width: ${(props) => props.theme.breakpoints.laptop}px) {
+      max-width: 60%;
+    }
   `,
 };
 

@@ -95,6 +95,10 @@ const Styled = {
       outline: none;
       transition: 300ms border-bottom-color ease-out;
 
+      &::placeholder {
+        color: ${({ theme }) => theme.colors.gray};
+      }
+
       &:focus {
         border-bottom-color: ${({ theme }) => theme.colors.white};
       }
@@ -131,15 +135,13 @@ const Styled = {
     }
   `,
   Submit: styled.button`
-    background: transparent;
-    border: 0;
-    color: ${(props) => props.theme.colors.lightSecondary};
+    background: #212327;
+    border: 1px solid #383838;
+    color: ${(props) => props.theme.colors.white};
     border-radius: 4px;
     font-size: 1em;
     padding: 1em 2em;
     font-family: Rubik;
-    box-shadow: 0.3px 0.3px 0.3px ${(props) => props.theme.colors.darkGray};
-    border: 1px solid ${(props) => props.theme.colors.darkGray};
     transition: all 300ms;
     width: 100%;
     position: relative;
@@ -155,9 +157,7 @@ const Styled = {
       cursor: pointer;
 
       &:hover {
-        color: white;
-        border-color: ${(props) => props.theme.colors.gray};
-        box-shadow: 0.3px 0.3px 0.3px ${(props) => props.theme.colors.gray};
+        border-color: #666;
       }
     }
 

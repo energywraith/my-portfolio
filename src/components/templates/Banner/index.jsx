@@ -7,10 +7,10 @@ import { InView } from 'react-intersection-observer';
 import Container from 'components/core/Container';
 import backgroundImage from 'assets/splash.webp';
 import arrowDown from 'assets/arrow-down.svg';
-import Nav from 'components/templates/Nav';
 import Animations from 'utils/Animations';
-import WhoAmI from 'components/templates/WhoAmI';
-import BadgesList from 'components/templates/BadgesList';
+import WhoAmI from 'components/templates/Banner/WhoAmI';
+import QuickContact from './QuickContact';
+import Nav from './Nav';
 
 function Banner() {
   const { t } = useTranslation();
@@ -26,7 +26,7 @@ function Banner() {
       />
       <Nav />
       <WhoAmI />
-      <BadgesList />
+      <QuickContact />
       <Styled.More isVisible={isVisible}>
         <ScrollLink to="Projects" smooth duration={500}>
           <img src={arrowDown} alt={t('banner.findOutMore')} />
