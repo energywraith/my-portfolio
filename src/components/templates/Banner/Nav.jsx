@@ -25,7 +25,6 @@ function Nav() {
 
   return (
     <Styled.Nav>
-
       <Styled.NavLinksWrapper>
         <Styled.NavLinks active={isActive}>
           <li>
@@ -37,6 +36,17 @@ function Nav() {
               smooth
             >
               {t('projects.nav')}
+            </Styled.NavLink>
+          </li>
+          <li>
+            <Styled.NavLink
+              to="Designs"
+              isDynamic
+              duration={750}
+              onClick={onHamburgerClick}
+              smooth
+            >
+              {t('designs.nav')}
             </Styled.NavLink>
           </li>
           <li>
