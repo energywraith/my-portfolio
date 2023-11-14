@@ -1,8 +1,8 @@
 {
   "translation": {
-    "name": "Adam Jałocha",
+    "name": "Hey, I'm Adam!",
     "description": {
-      "regular": "[There should be a description of an ambitious web developer]",
+      "regular": "Passionate Front-End Developer with a love for crafting visually stunning and intuitive web experiences.",
       "short": "Web developer"
     },
     "banner": {
@@ -10,9 +10,10 @@
     },
     "projects": {
       "nav": "Projects",
-      "header": "See my work",
-      "livePreview": "Live Preview",
-      "github": "Source code",
+      "header": "Projects",
+      "livePreview": "Demo",
+      "github": "Github",
+      "figma": "Figma",
       "technologies": {
         "express": "Express",
         "mongoDb": "MongoDB",
@@ -25,46 +26,39 @@
         "nuxt": "Nuxt 3",
         "next": "Next",
         "pinia": "Pinia",
-        "sass": "Sass"
+        "sass": "Sass",
+        "tailwind": "TailwindCSS"
       },
       "view": "View ",
       "hide": "Hide ",
       "details": "Details",
-      "vansScrapper": {
-        "name": "Vans Scrapper Website",
-        "description": "VSW is complementary to the one of the first scrappers I have ever done. Its an app that scrapes the shoes from the Vans page and displays them. The official Vans website is broken in several ways, which makes using it unpleasant.\n\nMy first idea was to make a scrapper in Puppeteer and then send updates on items to my Discord server using Discord webhooks, but it was impractical as I would have to check the items every day to keep track of them, which I dont have time for. So I have created a website where I connect to the API I created earlier and display the Vans shoes with some filters, so I can quickly check for available items every time",
-        "features": [
-          "Vans shoes are displayed in a simple way",
-          "You can save shoes for later using Favorite feature",
-          "Database is being updated every midnight"
-        ]
-      },
       "winamp": {
         "name": "Webinamp",
-        "description": "Remember the old good times when you used to listen to the legendary songs on your windows 95 using winamp? Well those times arent back, but we can pretend that this is the case thank to WEB WINAMP 9999. You can use winamp anytime and anywhere, all you need is a web browser and a little bit of internet connection 😳.\n\nDuring the development of the application, I noticed that the express on the backend actually just complicates the code of my application. The backend is very simple, its only task at the moment is to download songs using Ytdl, which is impossible on the client side.\n\nKnowing a bit about the React ecosystem, I started to look into whether there might be some interesting Next counterpart for Vue. And here came Nuxt 3, which delighted me with its simplicity, as well as the amount of facilitation it serves. So I decided to move Winamp from Express to Nuxt!",
-        "features": [
-          "You can play any youtube music in Winamp player",
-          "You can create playlist and its stored in browser cache"
-        ]
-      },
-      "geniusMusic": {
-        "name": "Genius music app",
-        "description": "App based on Genius API, where you can search for songs, based on lyrics or their name. You can also look there for your favourite artists or albums. Besides that there are random songs generated on home page, so you might discover your new favourite one :).",
-        "features": [
-          "Huge song/playlist/artists database thank to Genius API",
-          "Contains quick links to streaming pages like youtube/soundcloud/spotify"
-        ]
+        "description": "Winamp-like experience with tunes of 80s Japanese City Pop."
       },
       "emotion": {
-        "name": "✨Emotion 98.3",
-        "description": "As a devoted enthusiast of the '80s soundscape, I've poured my heart and soul into crafting an online experience that will transport you back in time. But it doesn't stop there. I'm tirelessly working to expand and enhance the features of this virtual OS, striving to make it not just a trip down memory lane, but an engaging and entertaining journey.\n\nIf you're curious and share my affection for the '80s, I invite you to dive headfirst into this project. It's the one I hold dearest to my heart, and every moment I invest in it is a labor of love.\n\nJoin me in reliving the magic of the '80s through emotion 98.3, and let's make some new memories together.",
-        "features": [
-          "A 80s-inspired interface with retro fonts, vibrant colors, and neon accents.",
-          "Tune in to a virtual '80s radio station with a playlist of classic tracks",
-          "Discover hidden '80s references and Easter eggs throughout the application.",
-          "Continuously adding new features, and content to keep the experience fresh and exciting."
-
-        ]
+        "name": "Emotion 98.3",
+        "description": "Nostalgic virtual operating system featuring applications with 80's vibes."
+      },
+      "harmonia": {
+        "name": "Harmonia",
+        "description": "Search songs by lyrics or name, discover artists, and enjoy curated random picks."
+      }
+    },
+    "designs": {
+      "nav": "Header",
+      "header": "Designs",
+      "harmonia": {
+        "name": "Harmonia",
+        "description": "Single page application: Discover songs with Harmonia!"
+      },
+      "foodCollection": {
+        "name": "Food Collection",
+        "description": "Community Care Flyer: \"Pełna Miska dla Schroniska\" Food Drive."
+      },
+      "drugieZycie": {
+        "name": "Drugie Życie",
+        "description": "Local School Campaign: \"I Ty możesz uratować komuś życie\" Organ Donation Brochure."
       }
     },
     "contact": {
