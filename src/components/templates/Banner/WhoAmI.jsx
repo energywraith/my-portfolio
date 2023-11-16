@@ -6,7 +6,7 @@ import useMisspell from 'hooks/useMisspell';
 
 function WhoAmI() {
   const { t } = useTranslation();
-  const [misSpelledString, rest] = useMisspell(t('name'));
+  const [misSpelledString, rest] = useMisspell(t('header'));
 
   return (
     <Styled.Wrapper>

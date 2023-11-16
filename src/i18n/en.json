@@ -1,6 +1,7 @@
 {
   "translation": {
-    "name": "Hey, I'm Adam!",
+    "name": "Adam Jałocha",
+    "header": "Hey, I'm Adam!",
     "description": {
       "regular": "Passionate Front-End Developer with a love for crafting visually stunning and intuitive web experiences.",
       "short": "Web developer"
