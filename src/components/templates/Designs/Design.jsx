@@ -45,12 +45,6 @@ const Styled = {
     position: relative;
     z-index: 0;
 
-    /* &:hover {
-      & > img {
-        filter: brightness(0.2) blur(1px);
-      }
-    } */
-
     img {
       transition: filter 300ms;
       width: 100%;
@@ -62,7 +56,7 @@ const Styled = {
       z-index: -1;
       object-fit: cover;
       object-position: top;
-      filter: brightness(0.1) blur(1px);
+      filter: brightness(0.25) blur(1px);
       pointer-events: none;
     }
 
@@ -83,7 +77,7 @@ const Styled = {
         text-underline-offset: 2px;
 
         & > a > img {
-          filter: brightness(0.15) blur(1px);
+          filter: brightness(0.3) blur(1px);
         }
       }
     }
