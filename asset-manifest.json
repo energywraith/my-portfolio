@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.564e1c23.css",
-    "main.js": "/static/js/main.1bf574db.js",
-    "static/media/drugie-zycie-demo.jpg": "/static/media/drugie-zycie-demo.8b13ec3836efa1af5673.jpg",
-    "static/media/drugie-zycie-design.jpg": "/static/media/drugie-zycie-design.ac7091e7cbc1e5ad30fc.jpg",
+    "main.js": "/static/js/main.85f8e446.js",
+    "static/media/drugie-zycie-design.jpg": "/static/media/drugie-zycie-design.657a167476a45daaf1b2.jpg",
     "static/media/saintjulianxv.png": "/static/media/saintjulianxv.b429f8516def857d87f8.png",
     "static/media/harmonia-design.jpg": "/static/media/harmonia-design.950c4ef13ba300e890da.jpg",
     "static/media/shelter-design.jpg": "/static/media/shelter-design.00529148ad15776e97c4.jpg",
@@ -18,10 +17,10 @@
     "index.html": "/index.html",
     "static/media/linkedin.svg": "/static/media/linkedin.1633a96222d704c5ee5222386dd242bd.svg",
     "main.564e1c23.css.map": "/static/css/main.564e1c23.css.map",
-    "main.1bf574db.js.map": "/static/js/main.1bf574db.js.map"
+    "main.85f8e446.js.map": "/static/js/main.85f8e446.js.map"
   },
   "entrypoints": [
     "static/css/main.564e1c23.css",
-    "static/js/main.1bf574db.js"
+    "static/js/main.85f8e446.js"
   ]
 }
